@@ -56,7 +56,6 @@ namespace SafePass_Application
             this.label1.TabIndex = 0;
             this.label1.Text = "Get Started";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // labelUsername
             // 
@@ -124,7 +123,6 @@ namespace SafePass_Application
             this.txtCon.Size = new System.Drawing.Size(155, 21);
             this.txtCon.TabIndex = 3;
             this.txtCon.Text = "Confirm Password";
-            this.txtCon.Click += new System.EventHandler(this.label4_Click);
             // 
             // checkbxShowPas
             // 
@@ -204,9 +202,9 @@ namespace SafePass_Application
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(178)))), ((int)(((byte)(170)))));
             this.label2.Location = new System.Drawing.Point(130, 543);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 20);
+            this.label2.Size = new System.Drawing.Size(104, 20);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Back to LOGIN";
+            this.label2.Text = "Back to Login";
             // 
             // label3
             // 
@@ -240,7 +238,7 @@ namespace SafePass_Application
             this.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "frmRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

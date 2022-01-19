@@ -54,7 +54,7 @@ namespace SafePass_Application
             // 
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(178)))), ((int)(((byte)(170)))));
-            this.label2.Location = new System.Drawing.Point(76, 535);
+            this.label2.Location = new System.Drawing.Point(76, 543);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(220, 20);
             this.label2.TabIndex = 22;
@@ -69,7 +69,7 @@ namespace SafePass_Application
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(178)))), ((int)(((byte)(170)))));
-            this.btnClear.Location = new System.Drawing.Point(80, 453);
+            this.btnClear.Location = new System.Drawing.Point(80, 454);
             this.btnClear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(216, 34);
