@@ -30,7 +30,7 @@ namespace SafePass_Application
         private void InitializeComponent()
         {
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.pressCreateAcc = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnSignUp = new System.Windows.Forms.Button();
             this.checkbxShowPas = new System.Windows.Forms.CheckBox();
@@ -50,16 +50,17 @@ namespace SafePass_Application
             this.label3.Text = "Don\'t Have An Account?";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // pressCreateAcc
             // 
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(178)))), ((int)(((byte)(170)))));
-            this.label2.Location = new System.Drawing.Point(76, 543);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(220, 20);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "Create Account";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.pressCreateAcc.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pressCreateAcc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(178)))), ((int)(((byte)(170)))));
+            this.pressCreateAcc.Location = new System.Drawing.Point(76, 543);
+            this.pressCreateAcc.Name = "pressCreateAcc";
+            this.pressCreateAcc.Size = new System.Drawing.Size(220, 20);
+            this.pressCreateAcc.TabIndex = 22;
+            this.pressCreateAcc.Text = "Create Account";
+            this.pressCreateAcc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.pressCreateAcc.Click += new System.EventHandler(this.pressCreateAcc_Click);
             // 
             // btnClear
             // 
@@ -76,6 +77,7 @@ namespace SafePass_Application
             this.btnClear.TabIndex = 18;
             this.btnClear.Text = "CLEAR";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnSignUp
             // 
@@ -109,6 +111,7 @@ namespace SafePass_Application
             this.checkbxShowPas.TabIndex = 17;
             this.checkbxShowPas.Text = "Show Password";
             this.checkbxShowPas.UseVisualStyleBackColor = true;
+            this.checkbxShowPas.CheckedChanged += new System.EventHandler(this.checkbxShowPas_CheckedChanged);
             // 
             // txtPassword
             // 
@@ -173,7 +176,7 @@ namespace SafePass_Application
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(375, 597);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.pressCreateAcc);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.checkbxShowPas);
@@ -198,7 +201,7 @@ namespace SafePass_Application
         #endregion
 
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label pressCreateAcc;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnSignUp;
         private System.Windows.Forms.CheckBox checkbxShowPas;

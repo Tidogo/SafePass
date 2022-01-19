@@ -41,7 +41,7 @@ namespace SafePass_Application
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.labelEmail = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.pressBackToLogin = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -137,6 +137,7 @@ namespace SafePass_Application
             this.checkbxShowPas.TabIndex = 5;
             this.checkbxShowPas.Text = "Show Password";
             this.checkbxShowPas.UseVisualStyleBackColor = true;
+            this.checkbxShowPas.CheckedChanged += new System.EventHandler(this.checkbxShowPas_CheckedChanged);
             // 
             // btnSignUp
             // 
@@ -194,17 +195,19 @@ namespace SafePass_Application
             this.btnClear.TabIndex = 6;
             this.btnClear.Text = "CLEAR";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // label2
+            // pressBackToLogin
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(178)))), ((int)(((byte)(170)))));
-            this.label2.Location = new System.Drawing.Point(130, 543);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 20);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Back to Login";
+            this.pressBackToLogin.AutoSize = true;
+            this.pressBackToLogin.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pressBackToLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(178)))), ((int)(((byte)(170)))));
+            this.pressBackToLogin.Location = new System.Drawing.Point(130, 543);
+            this.pressBackToLogin.Name = "pressBackToLogin";
+            this.pressBackToLogin.Size = new System.Drawing.Size(104, 20);
+            this.pressBackToLogin.TabIndex = 8;
+            this.pressBackToLogin.Text = "Back to Login";
+            this.pressBackToLogin.Click += new System.EventHandler(this.pressBackToLogin_Click);
             // 
             // label3
             // 
@@ -222,7 +225,7 @@ namespace SafePass_Application
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(375, 597);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.pressBackToLogin);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.labelEmail);
             this.Controls.Add(this.btnClear);
@@ -262,7 +265,7 @@ namespace SafePass_Application
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label labelEmail;
         private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label pressBackToLogin;
         private System.Windows.Forms.Label label3;
     }
 }
