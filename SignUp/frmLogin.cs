@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace SafePass_Application
 {
-    public partial class frmRegister : Form
+    public partial class frmLogin : Form
     {
-        public frmRegister()
+        public frmLogin()
         {
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void btnSignUp_Click(object sender, EventArgs e)
         {
 
         }

@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\SafePass\\SafePass.csproj": {}
+    "C:\\Users\\slick\\Source\\Repos\\Tidogo\\SafePass\\SafePass\\SafePass.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\SafePass\\SafePass.csproj": {
+    "C:\\Users\\slick\\Source\\Repos\\Tidogo\\SafePass\\SafePass\\SafePass.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\SafePass\\SafePass.csproj",
+        "projectUniqueName": "C:\\Users\\slick\\Source\\Repos\\Tidogo\\SafePass\\SafePass\\SafePass.csproj",
         "projectName": "SafePass",
-        "projectPath": "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\SafePass\\SafePass.csproj",
-        "packagesPath": "C:\\Users\\jedik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\SafePass\\obj\\",
+        "projectPath": "C:\\Users\\slick\\Source\\Repos\\Tidogo\\SafePass\\SafePass\\SafePass.csproj",
+        "packagesPath": "C:\\Users\\slick\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\slick\\Source\\Repos\\Tidogo\\SafePass\\SafePass\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\jedik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\slick\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -42,28 +39,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[6.0.1, )"
-            },
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[6.0.1, )"
-            },
-            "Microsoft.AspNetCore.Identity.UI": {
-              "target": "Package",
-              "version": "[6.0.1, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[6.0.1, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "target": "Package",
-              "version": "[6.0.1, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -74,15 +49,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }

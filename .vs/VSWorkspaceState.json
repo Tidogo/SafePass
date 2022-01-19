@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SignUp"
   ],
-  "SelectedNode": "\\SafePass.sln",
+  "SelectedNode": "\\SignUp\\frmRegister.cs",
   "PreviewInSolutionExplorer": false
 }

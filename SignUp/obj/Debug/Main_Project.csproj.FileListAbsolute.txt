@@ -1,0 +1,11 @@
+C:\Users\slick\Source\Repos\Tidogo\SafePass\SignUp\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\slick\Source\Repos\Tidogo\SafePass\SignUp\bin\Debug\WindowsFormsApp1.exe
+C:\Users\slick\Source\Repos\Tidogo\SafePass\SignUp\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\slick\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\Main_Project.csproj.AssemblyReference.cache
+C:\Users\slick\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\SafePass_Application.frmLogin.resources
+C:\Users\slick\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\SafePass_Application.frmRegister.resources
+C:\Users\slick\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\slick\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\Main_Project.csproj.GenerateResource.cache
+C:\Users\slick\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\Main_Project.csproj.CoreCompileInputs.cache
+C:\Users\slick\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\WindowsFormsApp1.exe
+C:\Users\slick\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\WindowsFormsApp1.pdb
