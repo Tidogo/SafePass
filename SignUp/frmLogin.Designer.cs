@@ -32,7 +32,7 @@ namespace SafePass_Application
             this.label3 = new System.Windows.Forms.Label();
             this.pressCreateAcc = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
-            this.btnSignUp = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.checkbxShowPas = new System.Windows.Forms.CheckBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.labelPassword = new System.Windows.Forms.Label();
@@ -79,24 +79,23 @@ namespace SafePass_Application
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // btnSignUp
+            // btnLogin
             // 
-            this.btnSignUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(178)))), ((int)(((byte)(170)))));
-            this.btnSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSignUp.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnSignUp.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnSignUp.FlatAppearance.BorderSize = 0;
-            this.btnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSignUp.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnSignUp.ForeColor = System.Drawing.Color.White;
-            this.btnSignUp.Location = new System.Drawing.Point(80, 395);
-            this.btnSignUp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSignUp.Name = "btnSignUp";
-            this.btnSignUp.Size = new System.Drawing.Size(216, 43);
-            this.btnSignUp.TabIndex = 19;
-            this.btnSignUp.Text = "SIGN UP";
-            this.btnSignUp.UseVisualStyleBackColor = false;
-            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(178)))), ((int)(((byte)(170)))));
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnLogin.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.Location = new System.Drawing.Point(80, 395);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(216, 43);
+            this.btnLogin.TabIndex = 19;
+            this.btnLogin.Text = "LOG IN";
+            this.btnLogin.UseVisualStyleBackColor = false;
             // 
             // checkbxShowPas
             // 
@@ -178,7 +177,7 @@ namespace SafePass_Application
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pressCreateAcc);
             this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.btnSignUp);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.checkbxShowPas);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.labelPassword);
@@ -203,7 +202,7 @@ namespace SafePass_Application
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label pressCreateAcc;
         private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.Button btnSignUp;
+        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.CheckBox checkbxShowPas;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label labelPassword;

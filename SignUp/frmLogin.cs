@@ -19,10 +19,6 @@ namespace SafePass_Application
             txtPassword.PasswordChar = '•';
         }
 
-        private void btnSignUp_Click(object sender, EventArgs e)
-        {
-            // connecting to the database here
-        }
 
         // Clear the entries
         private void btnClear_Click(object sender, EventArgs e)
