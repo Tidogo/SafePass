@@ -12,10 +12,14 @@ namespace MainMenu_Prototype
 {
     public partial class Form1 : Form
     {
+        TextBox searchTextBox = new TextBox();
+        
         public Form1()
         {
             InitializeComponent();
         }
+
+
         
     }
 }
