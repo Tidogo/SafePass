@@ -18,3 +18,7 @@ C:\Users\slick\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\MainMen
 C:\Users\slick\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\MainMenu-Prototype.csproj.CoreCompileInputs.cache
 C:\Users\slick\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\MainMenu-Prototype.exe
 C:\Users\slick\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\MainMenu-Prototype.pdb
+C:\Users\tdatt\source\repos\password-manager-prototype\MainMenu-Prototype\bin\Debug\System.Management.Automation.dll
+C:\Users\tdatt\source\repos\password-manager-prototype\MainMenu-Prototype\bin\Debug\Microsoft.Management.Infrastructure.dll
+C:\Users\tdatt\source\repos\password-manager-prototype\MainMenu-Prototype\bin\Debug\System.Management.Automation.xml
+C:\Users\tdatt\source\repos\password-manager-prototype\MainMenu-Prototype\obj\Debug\MainMenu-Prototype.csproj.CopyComplete
