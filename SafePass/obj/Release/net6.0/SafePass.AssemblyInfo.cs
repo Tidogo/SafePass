@@ -11,7 +11,6 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-SafePass-C5DD465D-16FE-46A7-B409-D1730D28AB26")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("SafePass")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
