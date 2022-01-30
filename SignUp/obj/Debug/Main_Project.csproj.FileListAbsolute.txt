@@ -9,3 +9,15 @@ C:\Users\slick\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\Main_Project.csproj
 C:\Users\slick\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\Main_Project.csproj.CoreCompileInputs.cache
 C:\Users\slick\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\WindowsFormsApp1.exe
 C:\Users\slick\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\bin\Debug\WindowsFormsApp1.exe
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\Main_Project.csproj.AssemblyReference.cache
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\Main_Project.csproj.SuggestedBindingRedirects.cache
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\SafePass_Application.frmLogin.resources
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\SafePass_Application.frmRegister.resources
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\Main_Project.csproj.GenerateResource.cache
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\Main_Project.csproj.CoreCompileInputs.cache
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\WindowsFormsApp1.exe
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\WindowsFormsApp1.pdb
