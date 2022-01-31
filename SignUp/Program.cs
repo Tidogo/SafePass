@@ -24,11 +24,9 @@ namespace SafePass_Application
                 builder.Password = "af8kK$T7Da";
                 builder.InitialCatalog = "safepass-db";
 
+                // test connection of database
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
-                    Console.WriteLine("\nQuery data example:");
-                    Console.WriteLine("=========================================\n");
-
                     String sql = "SELECT name, collation_name FROM sys.databases";
 
                     using (SqlCommand command = new SqlCommand(sql, connection))

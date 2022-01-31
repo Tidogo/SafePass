@@ -51,5 +51,35 @@ namespace SafePass_Application
             this.Hide();
         }
 
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+            // template code for adding new account to accounts table in db
+            /*try
+            {
+                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+                builder.DataSource = "safepass-serv.database.windows.net";
+                builder.UserID = "db-admin";
+                builder.Password = "af8kK$T7Da";
+                builder.InitialCatalog = "safepass-db";
+
+                // test connection of database
+                using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
+                {
+                    String query = "INSERT INTO dbo.SMS_PW (id,username,password,email) VALUES (@id,@username,@password, @email)";
+
+                    SqlCommand command = new SqlCommand(query, db.Connection);
+                    command.Parameters.Add("@id", "abc");
+                    command.Parameters.Add("@username", "abc");
+                    command.Parameters.Add("@password", "abc");
+                    command.Parameters.Add("@email", "abc");
+
+                    command.ExecuteNonQuery();
+                }
+            }
+            catch (SqlException ec)
+            {
+                Console.WriteLine(ec.ToString());
+            }*/
+        }
     }
-}
+    }

@@ -96,6 +96,7 @@ namespace SafePass_Application
             this.btnLogin.TabIndex = 19;
             this.btnLogin.Text = "LOG IN";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // checkbxShowPas
             // 

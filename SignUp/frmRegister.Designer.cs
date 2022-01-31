@@ -156,6 +156,7 @@ namespace SafePass_Application
             this.btnSignUp.TabIndex = 6;
             this.btnSignUp.Text = "SIGN UP";
             this.btnSignUp.UseVisualStyleBackColor = false;
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // txtEmail
             // 
