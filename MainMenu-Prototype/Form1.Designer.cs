@@ -29,6 +29,7 @@ namespace MainMenu_Prototype
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -43,6 +44,7 @@ namespace MainMenu_Prototype
             this.tagButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.logoPanel = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.addEntryButton = new System.Windows.Forms.Button();
             this.searchBox = new System.Windows.Forms.TextBox();
@@ -54,14 +56,17 @@ namespace MainMenu_Prototype
             this.serviceCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoryCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.noteCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.safepassdbDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this._safepass_dbDataSet = new MainMenu_Prototype._safepass_dbDataSet();
             this.leftMainPanel.SuspendLayout();
             this.tagPanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.safepassdbDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._safepass_dbDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // leftMainPanel
@@ -218,6 +223,15 @@ namespace MainMenu_Prototype
             this.logoPanel.Size = new System.Drawing.Size(200, 50);
             this.logoPanel.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MainMenu_Prototype.Properties.Resources.white_logo;
+            this.pictureBox1.Location = new System.Drawing.Point(7, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(188, 49);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.addEntryButton);
@@ -276,6 +290,7 @@ namespace MainMenu_Prototype
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
             this.dataView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataView.AutoGenerateColumns = false;
             this.dataView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataView.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dataView.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -286,6 +301,7 @@ namespace MainMenu_Prototype
             this.serviceCol,
             this.categoryCol,
             this.noteCol});
+            this.dataView.DataSource = this.safepassdbDataSetBindingSource;
             this.dataView.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataView.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataView.GridColor = System.Drawing.Color.Silver;
@@ -336,14 +352,15 @@ namespace MainMenu_Prototype
             this.noteCol.MinimumWidth = 10;
             this.noteCol.Name = "noteCol";
             // 
-            // pictureBox1
+            // safepassdbDataSetBindingSource
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(7, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(188, 49);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.safepassdbDataSetBindingSource.DataSource = this._safepass_dbDataSet;
+            this.safepassdbDataSetBindingSource.Position = 0;
+            // 
+            // _safepass_dbDataSet
+            // 
+            this._safepass_dbDataSet.DataSetName = "_safepass_dbDataSet";
+            this._safepass_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Form1
             // 
@@ -358,11 +375,13 @@ namespace MainMenu_Prototype
             this.leftMainPanel.ResumeLayout(false);
             this.tagPanel.ResumeLayout(false);
             this.logoPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.safepassdbDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._safepass_dbDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -392,6 +411,8 @@ namespace MainMenu_Prototype
         private System.Windows.Forms.DataGridViewTextBoxColumn categoryCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn noteCol;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.BindingSource safepassdbDataSetBindingSource;
+        private _safepass_dbDataSet _safepass_dbDataSet;
     }
 }
 

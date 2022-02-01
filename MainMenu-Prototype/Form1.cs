@@ -7,17 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace MainMenu_Prototype
 {
 
     public partial class Form1 : Form
     {
-        
+        // Make the form to use the entered credentials to show only their own data
         public Form1()
         {
             InitializeComponent();
-            
         }
 
         //Event handler for search box in main menu

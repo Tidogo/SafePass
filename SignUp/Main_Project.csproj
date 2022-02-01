@@ -92,5 +92,11 @@
   <ItemGroup>
     <None Include="Resources\white logo w blue lock lighter.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MainMenu-Prototype\MainMenu-Prototype.csproj">
+      <Project>{0248ACB5-3530-4AAD-B147-75A476F0AD20}</Project>
+      <Name>MainMenu-Prototype</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using MainMenu_Prototype;
 
 namespace SafePass_Application
 {
@@ -77,7 +78,10 @@ namespace SafePass_Application
                     else
                     {
                         int id = (int)command.ExecuteScalar();
-                        MessageBox.Show(id.ToString());
+                        //MessageBox.Show(id.ToString());
+                        // Opening a new main menu window
+                        this.Hide();
+                        new Form1().Show();
                     }
                 }
             }
