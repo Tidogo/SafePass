@@ -31,6 +31,7 @@ namespace MainMenu_Prototype
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.leftMainPanel = new System.Windows.Forms.Panel();
             this.tagPanel = new System.Windows.Forms.Panel();
             this.addTagButton = new System.Windows.Forms.Button();
@@ -43,16 +44,9 @@ namespace MainMenu_Prototype
             this.button1 = new System.Windows.Forms.Button();
             this.logoPanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-<<<<<<< HEAD
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.leftMainPanel.SuspendLayout();
-            this.tagPanel.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-=======
             this.addEntryButton = new System.Windows.Forms.Button();
             this.searchBox = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataView = new System.Windows.Forms.DataGridView();
             this.usernameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,7 +59,6 @@ namespace MainMenu_Prototype
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataView)).BeginInit();
->>>>>>> a1fed59de6ac8057e6718650671c3d7d19ae150a
             this.SuspendLayout();
             // 
             // leftMainPanel
@@ -76,9 +69,8 @@ namespace MainMenu_Prototype
             this.leftMainPanel.Controls.Add(this.logoPanel);
             this.leftMainPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.leftMainPanel.Location = new System.Drawing.Point(0, 0);
-            this.leftMainPanel.Margin = new System.Windows.Forms.Padding(6);
             this.leftMainPanel.Name = "leftMainPanel";
-            this.leftMainPanel.Size = new System.Drawing.Size(400, 865);
+            this.leftMainPanel.Size = new System.Drawing.Size(200, 450);
             this.leftMainPanel.TabIndex = 0;
             // 
             // tagPanel
@@ -92,10 +84,9 @@ namespace MainMenu_Prototype
             this.tagPanel.Controls.Add(this.subTagButton1);
             this.tagPanel.Controls.Add(this.tagButton);
             this.tagPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tagPanel.Location = new System.Drawing.Point(0, 175);
-            this.tagPanel.Margin = new System.Windows.Forms.Padding(6);
+            this.tagPanel.Location = new System.Drawing.Point(0, 91);
             this.tagPanel.Name = "tagPanel";
-            this.tagPanel.Size = new System.Drawing.Size(400, 469);
+            this.tagPanel.Size = new System.Drawing.Size(200, 244);
             this.tagPanel.TabIndex = 2;
             // 
             // addTagButton
@@ -106,11 +97,10 @@ namespace MainMenu_Prototype
             this.addTagButton.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addTagButton.Image = ((System.Drawing.Image)(resources.GetObject("addTagButton.Image")));
             this.addTagButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.addTagButton.Location = new System.Drawing.Point(0, 393);
-            this.addTagButton.Margin = new System.Windows.Forms.Padding(6);
+            this.addTagButton.Location = new System.Drawing.Point(0, 205);
             this.addTagButton.Name = "addTagButton";
-            this.addTagButton.Padding = new System.Windows.Forms.Padding(50, 0, 40, 0);
-            this.addTagButton.Size = new System.Drawing.Size(400, 75);
+            this.addTagButton.Padding = new System.Windows.Forms.Padding(25, 0, 20, 0);
+            this.addTagButton.Size = new System.Drawing.Size(200, 39);
             this.addTagButton.TabIndex = 6;
             this.addTagButton.Text = "Add Tag";
             this.addTagButton.UseVisualStyleBackColor = true;
@@ -122,10 +112,9 @@ namespace MainMenu_Prototype
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(0, 326);
-            this.button5.Margin = new System.Windows.Forms.Padding(6);
+            this.button5.Location = new System.Drawing.Point(0, 170);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(400, 67);
+            this.button5.Size = new System.Drawing.Size(200, 35);
             this.button5.TabIndex = 5;
             this.button5.Text = "Category2";
             this.button5.UseVisualStyleBackColor = false;
@@ -137,10 +126,9 @@ namespace MainMenu_Prototype
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(0, 259);
-            this.button4.Margin = new System.Windows.Forms.Padding(6);
+            this.button4.Location = new System.Drawing.Point(0, 135);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(400, 67);
+            this.button4.Size = new System.Drawing.Size(200, 35);
             this.button4.TabIndex = 4;
             this.button4.Text = "Favorite";
             this.button4.UseVisualStyleBackColor = false;
@@ -152,10 +140,9 @@ namespace MainMenu_Prototype
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(0, 192);
-            this.button3.Margin = new System.Windows.Forms.Padding(6);
+            this.button3.Location = new System.Drawing.Point(0, 100);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(400, 67);
+            this.button3.Size = new System.Drawing.Size(200, 35);
             this.button3.TabIndex = 3;
             this.button3.Text = "Shopping";
             this.button3.UseVisualStyleBackColor = false;
@@ -167,10 +154,9 @@ namespace MainMenu_Prototype
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(0, 125);
-            this.button2.Margin = new System.Windows.Forms.Padding(6);
+            this.button2.Location = new System.Drawing.Point(0, 65);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(400, 67);
+            this.button2.Size = new System.Drawing.Size(200, 35);
             this.button2.TabIndex = 2;
             this.button2.Text = "Social";
             this.button2.UseVisualStyleBackColor = false;
@@ -182,10 +168,9 @@ namespace MainMenu_Prototype
             this.subTagButton1.FlatAppearance.BorderSize = 0;
             this.subTagButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.subTagButton1.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subTagButton1.Location = new System.Drawing.Point(0, 58);
-            this.subTagButton1.Margin = new System.Windows.Forms.Padding(6);
+            this.subTagButton1.Location = new System.Drawing.Point(0, 30);
             this.subTagButton1.Name = "subTagButton1";
-            this.subTagButton1.Size = new System.Drawing.Size(400, 67);
+            this.subTagButton1.Size = new System.Drawing.Size(200, 35);
             this.subTagButton1.TabIndex = 1;
             this.subTagButton1.Text = "Email";
             this.subTagButton1.UseVisualStyleBackColor = false;
@@ -198,9 +183,8 @@ namespace MainMenu_Prototype
             this.tagButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tagButton.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tagButton.Location = new System.Drawing.Point(0, 0);
-            this.tagButton.Margin = new System.Windows.Forms.Padding(6);
             this.tagButton.Name = "tagButton";
-            this.tagButton.Size = new System.Drawing.Size(400, 58);
+            this.tagButton.Size = new System.Drawing.Size(200, 30);
             this.tagButton.TabIndex = 0;
             this.tagButton.Text = "Categories";
             this.tagButton.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -213,10 +197,9 @@ namespace MainMenu_Prototype
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(0, 96);
-            this.button1.Margin = new System.Windows.Forms.Padding(6);
+            this.button1.Location = new System.Drawing.Point(0, 50);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(400, 79);
+            this.button1.Size = new System.Drawing.Size(200, 41);
             this.button1.TabIndex = 1;
             this.button1.Text = "My Vault";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -227,9 +210,8 @@ namespace MainMenu_Prototype
             this.logoPanel.BackColor = System.Drawing.Color.LightSeaGreen;
             this.logoPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.logoPanel.Location = new System.Drawing.Point(0, 0);
-            this.logoPanel.Margin = new System.Windows.Forms.Padding(6);
             this.logoPanel.Name = "logoPanel";
-            this.logoPanel.Size = new System.Drawing.Size(400, 96);
+            this.logoPanel.Size = new System.Drawing.Size(200, 50);
             this.logoPanel.TabIndex = 0;
             // 
             // panel1
@@ -237,10 +219,10 @@ namespace MainMenu_Prototype
             this.panel1.Controls.Add(this.addEntryButton);
             this.panel1.Controls.Add(this.searchBox);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(400, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(200, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1200, 100);
+            this.panel1.Size = new System.Drawing.Size(600, 52);
             this.panel1.TabIndex = 1;
             // 
             // addEntryButton
@@ -248,9 +230,10 @@ namespace MainMenu_Prototype
             this.addEntryButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.addEntryButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.addEntryButton.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addEntryButton.Location = new System.Drawing.Point(967, 0);
+            this.addEntryButton.Location = new System.Drawing.Point(484, 0);
+            this.addEntryButton.Margin = new System.Windows.Forms.Padding(2);
             this.addEntryButton.Name = "addEntryButton";
-            this.addEntryButton.Size = new System.Drawing.Size(233, 100);
+            this.addEntryButton.Size = new System.Drawing.Size(116, 52);
             this.addEntryButton.TabIndex = 1;
             this.addEntryButton.Text = "Add New Entry";
             this.addEntryButton.UseVisualStyleBackColor = true;
@@ -260,27 +243,38 @@ namespace MainMenu_Prototype
             this.searchBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.searchBox.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchBox.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.searchBox.Location = new System.Drawing.Point(64, 26);
-            this.searchBox.Margin = new System.Windows.Forms.Padding(4);
+            this.searchBox.Location = new System.Drawing.Point(32, 14);
+            this.searchBox.Margin = new System.Windows.Forms.Padding(2);
             this.searchBox.Name = "searchBox";
-            this.searchBox.Size = new System.Drawing.Size(596, 50);
+            this.searchBox.Size = new System.Drawing.Size(299, 29);
             this.searchBox.TabIndex = 0;
             this.searchBox.Text = "Search Vault";
             this.searchBox.Click += new System.EventHandler(this.searchBox_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(0, 0);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 0;
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.dataView);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(400, 100);
+            this.panel2.Location = new System.Drawing.Point(200, 52);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1200, 765);
+            this.panel2.Size = new System.Drawing.Size(600, 398);
             this.panel2.TabIndex = 2;
             // 
             // dataView
             // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
+            this.dataView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataView.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dataView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataView.ColumnHeadersHeight = 50;
             this.dataView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.usernameCol,
@@ -292,24 +286,21 @@ namespace MainMenu_Prototype
             this.dataView.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataView.GridColor = System.Drawing.Color.Silver;
             this.dataView.Location = new System.Drawing.Point(0, 0);
+            this.dataView.Margin = new System.Windows.Forms.Padding(2);
             this.dataView.Name = "dataView";
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ControlDark;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.LightSeaGreen;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataView.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.LightSeaGreen;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataView.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataView.RowHeadersWidth = 198;
             this.dataView.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.dataView.RowTemplate.Height = 33;
-            this.dataView.Size = new System.Drawing.Size(1200, 765);
+            this.dataView.Size = new System.Drawing.Size(600, 398);
             this.dataView.TabIndex = 0;
-            this.dataView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataView.AlternatingRowsDefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(238, 239, 249);
-
-
             // 
             // usernameCol
             // 
@@ -341,40 +332,22 @@ namespace MainMenu_Prototype
             this.noteCol.MinimumWidth = 10;
             this.noteCol.Name = "noteCol";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(206, 57);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(594, 393);
-            this.dataGridView1.TabIndex = 2;
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
-=======
-            this.ClientSize = new System.Drawing.Size(1600, 865);
             this.Controls.Add(this.panel2);
->>>>>>> a1fed59de6ac8057e6718650671c3d7d19ae150a
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.leftMainPanel);
-            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
             this.Text = "Form1";
             this.leftMainPanel.ResumeLayout(false);
             this.tagPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-<<<<<<< HEAD
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-=======
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataView)).EndInit();
->>>>>>> a1fed59de6ac8057e6718650671c3d7d19ae150a
             this.ResumeLayout(false);
 
         }
@@ -393,10 +366,7 @@ namespace MainMenu_Prototype
         private System.Windows.Forms.Button tagButton;
         private System.Windows.Forms.Button addTagButton;
         private System.Windows.Forms.Panel panel1;
-<<<<<<< HEAD
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-=======
         private System.Windows.Forms.TextBox searchBox;
         private System.Windows.Forms.Button addEntryButton;
         private System.Windows.Forms.Panel panel2;
@@ -406,7 +376,6 @@ namespace MainMenu_Prototype
         private System.Windows.Forms.DataGridViewTextBoxColumn serviceCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn categoryCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn noteCol;
->>>>>>> a1fed59de6ac8057e6718650671c3d7d19ae150a
     }
 }
 
