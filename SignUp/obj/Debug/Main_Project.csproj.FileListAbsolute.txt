@@ -36,3 +36,7 @@ C:\Users\slick\Source\Repos\SafePass\SignUp\bin\Debug\MainMenu-Prototype.exe
 C:\Users\slick\Source\Repos\SafePass\SignUp\bin\Debug\MainMenu-Prototype.pdb
 C:\Users\slick\Source\Repos\SafePass\SignUp\bin\Debug\MainMenu-Prototype.exe.config
 C:\Users\slick\Source\Repos\SafePass\SignUp\obj\Debug\Main_Project.csproj.CopyComplete
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\bin\Debug\MainMenu-Prototype.exe
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\bin\Debug\MainMenu-Prototype.pdb
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\bin\Debug\MainMenu-Prototype.exe.config
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\Main_Project.csproj.CopyComplete

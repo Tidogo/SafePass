@@ -15,9 +15,6 @@ namespace MainMenu_Prototype
 
     public partial class Form1 : Form
     {
-        SqlCommand cmd;
-        SqlConnection conn;
-        SqlDataAdapter adapter;
 
         // Make the form to use the entered credentials to show only their own data
         public Form1()

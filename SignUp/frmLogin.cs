@@ -78,6 +78,7 @@ namespace SafePass_Application
                     else
                     {
                         int id = (int)command.ExecuteScalar();
+                        MessageBox.Show("Login Successful!");
                         //MessageBox.Show(id.ToString());
                         // Opening a new main menu window
                         this.Hide();
