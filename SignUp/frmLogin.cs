@@ -14,6 +14,7 @@ namespace SafePass_Application
 {
     public partial class frmLogin : Form
     {
+
         public frmLogin()
         {
             InitializeComponent();
@@ -78,7 +79,7 @@ namespace SafePass_Application
                     else
                     {
                         int id = (int)command.ExecuteScalar();
-                        //MessageBox.Show(id.ToString());
+                        //MessageBox.Show(id.ToString()); - removed the pop up window
                         // Opening a new main menu window
                         this.Hide();
                         new Form1().Show();
