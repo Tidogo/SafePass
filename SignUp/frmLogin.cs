@@ -85,7 +85,7 @@ namespace SafePass_Application
                         // Opening a new main menu window
                         this.Hide();
                         // pass account id found in db to main menu
-                        new Form1(id).Show();
+                        new frmMain(id).Show();
                     }
                 }
             }

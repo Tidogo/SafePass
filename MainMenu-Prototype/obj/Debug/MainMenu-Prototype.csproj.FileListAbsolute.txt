@@ -44,10 +44,11 @@ C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\bin\Debug\Microso
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\bin\Debug\System.Management.Automation.xml
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\MainMenu-Prototype.csproj.AssemblyReference.cache
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\MainMenu-Prototype.csproj.SuggestedBindingRedirects.cache
-C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\MainMenu_Prototype.Form1.resources
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\MainMenu_Prototype.Properties.Resources.resources
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\MainMenu-Prototype.csproj.GenerateResource.cache
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\MainMenu-Prototype.csproj.CoreCompileInputs.cache
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\MainMenu-Prototype.csproj.CopyComplete
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\MainMenu-Prototype.exe
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\MainMenu-Prototype.pdb
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\MainMenu_Prototype.frmPassAdd.resources
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\MainMenu_Prototype.frmMain.resources
