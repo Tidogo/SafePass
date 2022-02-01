@@ -54,11 +54,14 @@ namespace MainMenu_Prototype
             this.serviceCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoryCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.noteCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.leftMainPanel.SuspendLayout();
             this.tagPanel.SuspendLayout();
+            this.logoPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // leftMainPanel
@@ -208,6 +211,7 @@ namespace MainMenu_Prototype
             // logoPanel
             // 
             this.logoPanel.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.logoPanel.Controls.Add(this.pictureBox1);
             this.logoPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.logoPanel.Location = new System.Drawing.Point(0, 0);
             this.logoPanel.Name = "logoPanel";
@@ -332,6 +336,15 @@ namespace MainMenu_Prototype
             this.noteCol.MinimumWidth = 10;
             this.noteCol.Name = "noteCol";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(7, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(188, 49);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -344,10 +357,12 @@ namespace MainMenu_Prototype
             this.Text = "Form1";
             this.leftMainPanel.ResumeLayout(false);
             this.tagPanel.ResumeLayout(false);
+            this.logoPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -376,6 +391,7 @@ namespace MainMenu_Prototype
         private System.Windows.Forms.DataGridViewTextBoxColumn serviceCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn categoryCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn noteCol;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
