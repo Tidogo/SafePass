@@ -15,11 +15,14 @@ namespace MainMenu_Prototype
 
     public partial class Form1 : Form
     {
+        // account id stored in this public variable
+        public int id = 0;
 
         // Make the form to use the entered credentials to show only their own data
-        public Form1()
+        public Form1(int loginid)
         {
             InitializeComponent();
+            id = loginid;
         }
 
         //Event handler for search box in main menu

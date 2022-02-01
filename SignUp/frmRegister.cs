@@ -57,13 +57,14 @@ namespace SafePass_Application
             
             try
             {
+                // default connection string for any connection to safepass-db
                 SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
                 builder.DataSource = "safepass-serv.database.windows.net";
                 builder.UserID = "db-admin";
                 builder.Password = "af8kK$T7Da";
                 builder.InitialCatalog = "safepass-db";
 
-                // test connection of database
+                // code for generating sql query to insert new account into database
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
                     connection.Open();
