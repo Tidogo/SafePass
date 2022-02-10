@@ -33,6 +33,10 @@ namespace MainMenu_Prototype
 
         private void button1_Click(object sender, EventArgs e)
         {
+            /*
+             * For the add user button
+             * */
+
             try
             {
                 // default connection string for any connection to safepass-db
@@ -66,6 +70,20 @@ namespace MainMenu_Prototype
             {
                 Console.WriteLine(ec.ToString());
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            /*
+             * For the update user button
+             * */
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            /*
+             * For the delete user button
+             * */
         }
     }
 }
