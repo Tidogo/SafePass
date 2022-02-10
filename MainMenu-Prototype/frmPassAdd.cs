@@ -87,7 +87,7 @@ namespace MainMenu_Prototype
                 builder.Password = "af8kK$T7Da";
                 builder.InitialCatalog = "safepass-db";
 
-                // code for generating sql query to insert new account into database
+                // code for generating sql query to update account info based on account ID into database
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
                     connection.Open();
