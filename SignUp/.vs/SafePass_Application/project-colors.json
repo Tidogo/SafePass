@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "5c689c32-d422-40d0-941c-fcd2c33d5446": {
+      "ProjectGuid": "5c689c32-d422-40d0-941c-fcd2c33d5446",
+      "DisplayName": "Main_Project",
+      "ColorIndex": 0
+    },
+    "0248acb5-3530-4aad-b147-75a476f0ad20": {
+      "ProjectGuid": "0248acb5-3530-4aad-b147-75a476f0ad20",
+      "DisplayName": "MainMenu-Prototype",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
