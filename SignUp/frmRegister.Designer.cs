@@ -30,8 +30,6 @@ namespace SafePass_Application
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.labelUsername = new System.Windows.Forms.Label();
-            this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.labelPassword = new System.Windows.Forms.Label();
             this.txtConfPassword = new System.Windows.Forms.TextBox();
@@ -58,29 +56,6 @@ namespace SafePass_Application
             this.label1.TabIndex = 0;
             this.label1.Text = "Get Started";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // labelUsername
-            // 
-            this.labelUsername.AutoSize = true;
-            this.labelUsername.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUsername.Location = new System.Drawing.Point(75, 111);
-            this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(87, 21);
-            this.labelUsername.TabIndex = 1;
-            this.labelUsername.Text = "Username";
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
-            this.txtUsername.ForeColor = System.Drawing.Color.DimGray;
-            this.txtUsername.Location = new System.Drawing.Point(80, 134);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtUsername.Multiline = true;
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(216, 28);
-            this.txtUsername.TabIndex = 1;
             // 
             // txtPassword
             // 
@@ -166,7 +141,7 @@ namespace SafePass_Application
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
             this.txtEmail.ForeColor = System.Drawing.Color.DimGray;
-            this.txtEmail.Location = new System.Drawing.Point(80, 197);
+            this.txtEmail.Location = new System.Drawing.Point(79, 143);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
@@ -177,7 +152,7 @@ namespace SafePass_Application
             // 
             this.labelEmail.AutoSize = true;
             this.labelEmail.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEmail.Location = new System.Drawing.Point(75, 174);
+            this.labelEmail.Location = new System.Drawing.Point(76, 120);
             this.labelEmail.Name = "labelEmail";
             this.labelEmail.Size = new System.Drawing.Size(53, 21);
             this.labelEmail.TabIndex = 7;
@@ -249,8 +224,6 @@ namespace SafePass_Application
             this.Controls.Add(this.txtCon);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.labelPassword);
-            this.Controls.Add(this.txtUsername);
-            this.Controls.Add(this.labelUsername);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
@@ -269,8 +242,6 @@ namespace SafePass_Application
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label labelUsername;
-        private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label labelPassword;
         private System.Windows.Forms.TextBox txtConfPassword;

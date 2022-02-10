@@ -1,7 +1,7 @@
 ﻿
 namespace MainMenu_Prototype
 {
-    partial class Form1
+    partial class frmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -29,8 +29,7 @@ namespace MainMenu_Prototype
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.leftMainPanel = new System.Windows.Forms.Panel();
@@ -56,7 +55,7 @@ namespace MainMenu_Prototype
             this.serviceCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoryCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.noteCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.safepassdbDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.safepassdbDataSetBindingSource = new System.Windows.Forms.BindingSource();
             this._safepass_dbDataSet = new MainMenu_Prototype._safepass_dbDataSet();
             this.leftMainPanel.SuspendLayout();
             this.tagPanel.SuspendLayout();
@@ -255,6 +254,7 @@ namespace MainMenu_Prototype
             this.addEntryButton.TabIndex = 1;
             this.addEntryButton.Text = "Add New Entry";
             this.addEntryButton.UseVisualStyleBackColor = true;
+            this.addEntryButton.Click += new System.EventHandler(this.addEntryButton_Click);
             // 
             // searchBox
             // 
@@ -362,7 +362,7 @@ namespace MainMenu_Prototype
             this._safepass_dbDataSet.DataSetName = "_safepass_dbDataSet";
             this._safepass_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // Form1
+            // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -370,7 +370,7 @@ namespace MainMenu_Prototype
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.leftMainPanel);
-            this.Name = "Form1";
+            this.Name = "frmMain";
             this.Text = "Form1";
             this.leftMainPanel.ResumeLayout(false);
             this.tagPanel.ResumeLayout(false);

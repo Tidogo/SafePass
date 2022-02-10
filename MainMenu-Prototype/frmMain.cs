@@ -13,16 +13,16 @@ using System.Data.SqlClient;
 namespace MainMenu_Prototype
 {
 
-    public partial class Form1 : Form
+    public partial class frmMain : Form
     {
-        SqlCommand cmd;
-        SqlConnection conn;
-        SqlDataAdapter adapter;
+        // account id stored in this public variable
+        public int id = 0;
 
         // Make the form to use the entered credentials to show only their own data
-        public Form1()
+        public frmMain(int loginid)
         {
             InitializeComponent();
+            id = loginid;
         }
 
         //Event handler for search box in main menu
@@ -37,6 +37,12 @@ namespace MainMenu_Prototype
             {
                 searchBox.Text = "Search Vault";
             }
+        }
+
+        private void addEntryButton_Click(object sender, EventArgs e)
+        {
+            new frmPassAdd(id).Show();
+            this.Hide();
         }
     }
 }

@@ -56,12 +56,14 @@ namespace SafePass_Application
             string password = txtPassword.Text;
             try
             {
+                // default connection string for any connection to safepass-db
                 SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
                 builder.DataSource = "safepass-serv.database.windows.net";
                 builder.UserID = "db-admin";
                 builder.Password = "af8kK$T7Da";
                 builder.InitialCatalog = "safepass-db";
 
+                // code for finding and grabbing id of account which user entered credentials for
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
                     String query = "SELECT * FROM Accounts WHERE AccountEmail LIKE @acemail AND AccountPW LIKE @acpw";
@@ -78,10 +80,12 @@ namespace SafePass_Application
                     else
                     {
                         int id = (int)command.ExecuteScalar();
+                        MessageBox.Show("Login Successful!");
                         //MessageBox.Show(id.ToString());
                         // Opening a new main menu window
                         this.Hide();
-                        new Form1().Show();
+                        // pass account id found in db to main menu
+                        new frmMain(id).Show();
                     }
                 }
             }
