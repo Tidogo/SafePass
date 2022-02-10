@@ -77,6 +77,39 @@ namespace MainMenu_Prototype
             /*
              * For the update user button
              * */
+
+            try
+            {
+                // default connection string for any connection to safepass-db
+                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+                builder.DataSource = "safepass-serv.database.windows.net";
+                builder.UserID = "db-admin";
+                builder.Password = "af8kK$T7Da";
+                builder.InitialCatalog = "safepass-db";
+
+                // code for generating sql query to insert new account into database
+                using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
+                {
+                    connection.Open();
+                    String query = "UPDATE Users set UserPW = @upw,UserEmail = @umail,Category = @cat,Notes = @notes,ServiceName = @servname,ServiceURL = @servurl WHERE AccountID = @aid";
+
+                    SqlCommand command = new SqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@upw", txtUserPW.Text);
+                    command.Parameters.AddWithValue("@umail", txtUserEmail.Text);
+                    command.Parameters.AddWithValue("@cat", txtCategory.Text);
+                    command.Parameters.AddWithValue("@notes", txtNotes.Text);
+                    command.Parameters.AddWithValue("@aid", id);
+                    command.Parameters.AddWithValue("@servname", txtServiceName.Text);
+                    command.Parameters.AddWithValue("@servurl", txtServiceURL.Text);
+                    command.ExecuteNonQuery();
+                    new frmMain(id).Show();
+                    this.Hide();
+                }
+            }
+            catch (SqlException ec)
+            {
+                Console.WriteLine(ec.ToString());
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
