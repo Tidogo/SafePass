@@ -44,5 +44,28 @@ namespace MainMenu_Prototype
             new frmPassAdd(id).Show();
             this.Hide();
         }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            bindData();
+        }
+
+        void bindData()
+        {
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+            builder.DataSource = "safepass-serv.database.windows.net";
+            builder.UserID = "db-admin";
+            builder.Password = "af8kK$T7Da";
+            builder.InitialCatalog = "safepass-db";
+
+            SqlConnection connection = new SqlConnection(builder.ConnectionString);
+            connection.Open();
+            SqlCommand command = new SqlCommand("SELECT * FROM Users", connection);
+            SqlDataAdapter sda = new SqlDataAdapter(command);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            dataGridView1.DataSource = dt;
+
+        }
     }
 }
