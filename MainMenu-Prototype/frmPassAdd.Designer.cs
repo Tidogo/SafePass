@@ -43,12 +43,13 @@
             this.addUser = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.userid = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtUserEmail
             // 
             this.txtUserEmail.Location = new System.Drawing.Point(536, 154);
-            this.txtUserEmail.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtUserEmail.Margin = new System.Windows.Forms.Padding(6);
             this.txtUserEmail.Name = "txtUserEmail";
             this.txtUserEmail.Size = new System.Drawing.Size(248, 31);
             this.txtUserEmail.TabIndex = 0;
@@ -57,7 +58,7 @@
             // txtUserPW
             // 
             this.txtUserPW.Location = new System.Drawing.Point(536, 204);
-            this.txtUserPW.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtUserPW.Margin = new System.Windows.Forms.Padding(6);
             this.txtUserPW.Name = "txtUserPW";
             this.txtUserPW.Size = new System.Drawing.Size(248, 31);
             this.txtUserPW.TabIndex = 1;
@@ -65,7 +66,7 @@
             // txtCategory
             // 
             this.txtCategory.Location = new System.Drawing.Point(536, 254);
-            this.txtCategory.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtCategory.Margin = new System.Windows.Forms.Padding(6);
             this.txtCategory.Name = "txtCategory";
             this.txtCategory.Size = new System.Drawing.Size(248, 31);
             this.txtCategory.TabIndex = 2;
@@ -73,7 +74,7 @@
             // txtNotes
             // 
             this.txtNotes.Location = new System.Drawing.Point(536, 306);
-            this.txtNotes.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtNotes.Margin = new System.Windows.Forms.Padding(6);
             this.txtNotes.Name = "txtNotes";
             this.txtNotes.Size = new System.Drawing.Size(248, 31);
             this.txtNotes.TabIndex = 3;
@@ -81,7 +82,7 @@
             // txtServiceName
             // 
             this.txtServiceName.Location = new System.Drawing.Point(536, 358);
-            this.txtServiceName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtServiceName.Margin = new System.Windows.Forms.Padding(6);
             this.txtServiceName.Name = "txtServiceName";
             this.txtServiceName.Size = new System.Drawing.Size(248, 31);
             this.txtServiceName.TabIndex = 4;
@@ -89,7 +90,7 @@
             // txtServiceURL
             // 
             this.txtServiceURL.Location = new System.Drawing.Point(536, 410);
-            this.txtServiceURL.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtServiceURL.Margin = new System.Windows.Forms.Padding(6);
             this.txtServiceURL.Name = "txtServiceURL";
             this.txtServiceURL.Size = new System.Drawing.Size(248, 31);
             this.txtServiceURL.TabIndex = 5;
@@ -165,7 +166,7 @@
             // 
             this.addUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addUser.Location = new System.Drawing.Point(472, 515);
-            this.addUser.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.addUser.Margin = new System.Windows.Forms.Padding(6);
             this.addUser.Name = "addUser";
             this.addUser.Size = new System.Drawing.Size(264, 144);
             this.addUser.TabIndex = 12;
@@ -197,11 +198,20 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // userid
+            // 
+            this.userid.Location = new System.Drawing.Point(536, 453);
+            this.userid.Margin = new System.Windows.Forms.Padding(6);
+            this.userid.Name = "userid";
+            this.userid.Size = new System.Drawing.Size(248, 31);
+            this.userid.TabIndex = 15;
+            // 
             // frmPassAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1600, 865);
+            this.Controls.Add(this.userid);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.addUser);
@@ -217,7 +227,7 @@
             this.Controls.Add(this.txtCategory);
             this.Controls.Add(this.txtUserPW);
             this.Controls.Add(this.txtUserEmail);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frmPassAdd";
             this.Text = "Form2";
             this.ResumeLayout(false);
@@ -242,5 +252,6 @@
         private System.Windows.Forms.Button addUser;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox userid;
     }
 }

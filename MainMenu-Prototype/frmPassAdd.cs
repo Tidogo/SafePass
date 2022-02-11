@@ -87,11 +87,11 @@ namespace MainMenu_Prototype
                 builder.Password = "af8kK$T7Da";
                 builder.InitialCatalog = "safepass-db";
 
-                // code for generating sql query to update account info based on account ID into database
+                // code for generating sql query to update account info based on user ID into database
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
                     connection.Open();
-                    String query = "UPDATE Users set UserPW = @upw,UserEmail = @umail,Category = @cat,Notes = @notes,ServiceName = @servname,ServiceURL = @servurl WHERE AccountID = @aid";
+                    String query = "UPDATE Users set UserPW = @upw,UserEmail = @umail,Category = @cat,Notes = @notes,ServiceName = @servname,AccountID = @aid,ServiceURL = @servurl WHERE UserID = @uid";
 
                     SqlCommand command = new SqlCommand(query, connection);
                     command.Parameters.AddWithValue("@upw", txtUserPW.Text);
@@ -101,6 +101,7 @@ namespace MainMenu_Prototype
                     command.Parameters.AddWithValue("@aid", id);
                     command.Parameters.AddWithValue("@servname", txtServiceName.Text);
                     command.Parameters.AddWithValue("@servurl", txtServiceURL.Text);
+                    command.Parameters.AddWithValue("@uid", userid.Text);
                     command.ExecuteNonQuery();
                     new frmMain(id).Show();
                     this.Hide();
@@ -117,6 +118,33 @@ namespace MainMenu_Prototype
             /*
              * For the delete user button
              * */
+
+            try
+            {
+                // default connection string for any connection to safepass-db
+                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+                builder.DataSource = "safepass-serv.database.windows.net";
+                builder.UserID = "db-admin";
+                builder.Password = "af8kK$T7Da";
+                builder.InitialCatalog = "safepass-db";
+
+                // code for generating sql query to delete account info based on user ID from database
+                using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
+                {
+                    connection.Open();
+                    String query = "DELETE Users WHERE UserID = @uid";
+
+                    SqlCommand command = new SqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@uid", userid.Text);
+                    command.ExecuteNonQuery();
+                    new frmMain(id).Show();
+                    this.Hide();
+                }
+            }
+            catch (SqlException ec)
+            {
+                Console.WriteLine(ec.ToString());
+            }
         }
     }
 }
