@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmGenPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGenPass.Designer.cs">
+      <DependentUpon>frmGenPass.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_safepass_dbDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmGenPass.resx">
+      <DependentUpon>frmGenPass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
