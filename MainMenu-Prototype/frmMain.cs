@@ -67,5 +67,11 @@ namespace MainMenu_Prototype
             dataGridView1.DataSource = dt;
 
         }
+
+        private void generatePass_Click(object sender, EventArgs e)
+        {
+            new frmGenPass(id).Show();
+            this.Hide();
+        }
     }
 }
