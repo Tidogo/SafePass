@@ -69,3 +69,6 @@ C:\Users\Admin\source\repos\SafePass10\MainMenu-Prototype\obj\Debug\MainMenu-Pro
 C:\Users\Admin\source\repos\SafePass10\MainMenu-Prototype\obj\Debug\MainMenu-Prototype.exe
 C:\Users\Admin\source\repos\SafePass10\MainMenu-Prototype\obj\Debug\MainMenu-Prototype.pdb
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\MainMenu_Prototype.frmGenPass.resources
+C:\Users\Admin\source\repos\SafePass10\MainMenu-Prototype\obj\Debug\MainMenu_Prototype.frmGenPass.resources
+C:\Users\Admin\source\repos\SafePass10\MainMenu-Prototype\obj\Debug\MainMenu_Prototype.frmPassDelete.resources
+C:\Users\Admin\source\repos\SafePass10\MainMenu-Prototype\obj\Debug\MainMenu_Prototype.frmPassUpdate.resources

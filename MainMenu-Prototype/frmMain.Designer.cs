@@ -30,12 +30,11 @@ namespace MainMenu_Prototype
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.leftMainPanel = new System.Windows.Forms.Panel();
             this.tagPanel = new System.Windows.Forms.Panel();
-            this.addTagButton = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -44,14 +43,12 @@ namespace MainMenu_Prototype
             this.tagButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.logoPanel = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.generatePass = new System.Windows.Forms.Button();
             this.addEntryButton = new System.Windows.Forms.Button();
             this.searchBox = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataView = new System.Windows.Forms.DataGridView();
             this.usernameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.passwordCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,16 +57,17 @@ namespace MainMenu_Prototype
             this.noteCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.safepassdbDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this._safepass_dbDataSet = new MainMenu_Prototype._safepass_dbDataSet();
+            this.addTagButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.leftMainPanel.SuspendLayout();
             this.tagPanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.safepassdbDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._safepass_dbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // leftMainPanel
@@ -101,23 +99,6 @@ namespace MainMenu_Prototype
             this.tagPanel.Name = "tagPanel";
             this.tagPanel.Size = new System.Drawing.Size(400, 469);
             this.tagPanel.TabIndex = 2;
-            // 
-            // addTagButton
-            // 
-            this.addTagButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.addTagButton.FlatAppearance.BorderSize = 0;
-            this.addTagButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addTagButton.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addTagButton.Image = ((System.Drawing.Image)(resources.GetObject("addTagButton.Image")));
-            this.addTagButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.addTagButton.Location = new System.Drawing.Point(0, 393);
-            this.addTagButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.addTagButton.Name = "addTagButton";
-            this.addTagButton.Padding = new System.Windows.Forms.Padding(50, 0, 40, 0);
-            this.addTagButton.Size = new System.Drawing.Size(400, 75);
-            this.addTagButton.TabIndex = 6;
-            this.addTagButton.Text = "Add Tag";
-            this.addTagButton.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
@@ -237,16 +218,6 @@ namespace MainMenu_Prototype
             this.logoPanel.Size = new System.Drawing.Size(400, 96);
             this.logoPanel.TabIndex = 0;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MainMenu_Prototype.Properties.Resources.white_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(14, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(376, 94);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.generatePass);
@@ -307,7 +278,6 @@ namespace MainMenu_Prototype
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Controls.Add(this.dataView);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(400, 100);
@@ -315,17 +285,6 @@ namespace MainMenu_Prototype
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1200, 765);
             this.panel2.TabIndex = 2;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(28, 171);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 82;
-            this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(968, 446);
-            this.dataGridView1.TabIndex = 1;
             // 
             // dataView
             // 
@@ -403,6 +362,33 @@ namespace MainMenu_Prototype
             this._safepass_dbDataSet.DataSetName = "_safepass_dbDataSet";
             this._safepass_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // addTagButton
+            // 
+            this.addTagButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.addTagButton.FlatAppearance.BorderSize = 0;
+            this.addTagButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addTagButton.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addTagButton.Image = ((System.Drawing.Image)(resources.GetObject("addTagButton.Image")));
+            this.addTagButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addTagButton.Location = new System.Drawing.Point(0, 393);
+            this.addTagButton.Margin = new System.Windows.Forms.Padding(6);
+            this.addTagButton.Name = "addTagButton";
+            this.addTagButton.Padding = new System.Windows.Forms.Padding(50, 0, 40, 0);
+            this.addTagButton.Size = new System.Drawing.Size(400, 75);
+            this.addTagButton.TabIndex = 6;
+            this.addTagButton.Text = "Add Tag";
+            this.addTagButton.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MainMenu_Prototype.Properties.Resources.white_logo;
+            this.pictureBox1.Location = new System.Drawing.Point(14, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(376, 94);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -418,14 +404,13 @@ namespace MainMenu_Prototype
             this.leftMainPanel.ResumeLayout(false);
             this.tagPanel.ResumeLayout(false);
             this.logoPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.safepassdbDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._safepass_dbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -457,7 +442,6 @@ namespace MainMenu_Prototype
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.BindingSource safepassdbDataSetBindingSource;
         private _safepass_dbDataSet _safepass_dbDataSet;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button generatePass;
     }
 }

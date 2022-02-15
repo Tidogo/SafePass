@@ -62,9 +62,10 @@ namespace MainMenu_Prototype
 
             SqlConnection connection = new SqlConnection(builder.ConnectionString);
             connection.Open();
-            SqlCommand command = new SqlCommand("SELECT * FROM Users", connection);
-            SqlDataReader sdr = command.ExecuteReader();
-            dataView.DataSource = sdr;
+
+            //SqlCommand command = new SqlCommand("SELECT * FROM Users", connection);
+            //SqlDataReader sdr = command.ExecuteReader();
+            //dataView.DataSource = sdr;
             //dataView.dataBind();
 
         }
