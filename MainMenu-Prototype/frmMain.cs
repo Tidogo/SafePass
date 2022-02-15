@@ -63,7 +63,7 @@ namespace MainMenu_Prototype
             SqlConnection connection = new SqlConnection(builder.ConnectionString);
             connection.Open();
 
-            SqlCommand command = new SqlCommand("SELECT UserEmail,UserPW,ServiceName,Category,Notes FROM Users", connection);
+            SqlCommand command = new SqlCommand("SELECT UserEmail,UserPW,ServiceName,Category,Notes, UserPWSTR FROM Users", connection);
             SqlDataAdapter sda = new SqlDataAdapter(command);
             DataTable dt = new DataTable();
             sda.Fill(dt);
