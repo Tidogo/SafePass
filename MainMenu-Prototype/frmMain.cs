@@ -76,5 +76,10 @@ namespace MainMenu_Prototype
             new frmGenPass(id).Show();
             this.Hide();
         }
+
+        private void dataView_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

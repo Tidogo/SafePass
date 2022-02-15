@@ -50,15 +50,15 @@ namespace MainMenu_Prototype
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataView = new System.Windows.Forms.DataGridView();
+            this.safepassdbDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this._safepass_dbDataSet = new MainMenu_Prototype._safepass_dbDataSet();
+            this.addTagButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.usernameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.passwordCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.serviceCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoryCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.noteCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.safepassdbDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this._safepass_dbDataSet = new MainMenu_Prototype._safepass_dbDataSet();
-            this.addTagButton = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.leftMainPanel.SuspendLayout();
             this.tagPanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
@@ -321,36 +321,7 @@ namespace MainMenu_Prototype
             this.dataView.RowTemplate.Height = 33;
             this.dataView.Size = new System.Drawing.Size(1200, 765);
             this.dataView.TabIndex = 0;
-            // 
-            // usernameCol
-            // 
-            this.usernameCol.HeaderText = "Username";
-            this.usernameCol.MinimumWidth = 10;
-            this.usernameCol.Name = "usernameCol";
-            // 
-            // passwordCol
-            // 
-            this.passwordCol.HeaderText = "Password";
-            this.passwordCol.MinimumWidth = 10;
-            this.passwordCol.Name = "passwordCol";
-            // 
-            // serviceCol
-            // 
-            this.serviceCol.HeaderText = "Service";
-            this.serviceCol.MinimumWidth = 10;
-            this.serviceCol.Name = "serviceCol";
-            // 
-            // categoryCol
-            // 
-            this.categoryCol.HeaderText = "Category";
-            this.categoryCol.MinimumWidth = 10;
-            this.categoryCol.Name = "categoryCol";
-            // 
-            // noteCol
-            // 
-            this.noteCol.HeaderText = "Notes";
-            this.noteCol.MinimumWidth = 10;
-            this.noteCol.Name = "noteCol";
+            this.dataView.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataView_CellValueChanged);
             // 
             // safepassdbDataSetBindingSource
             // 
@@ -388,6 +359,41 @@ namespace MainMenu_Prototype
             this.pictureBox1.Size = new System.Drawing.Size(376, 94);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // usernameCol
+            // 
+            this.usernameCol.DataPropertyName = "UserEmail";
+            this.usernameCol.HeaderText = "Username";
+            this.usernameCol.MinimumWidth = 10;
+            this.usernameCol.Name = "usernameCol";
+            // 
+            // passwordCol
+            // 
+            this.passwordCol.DataPropertyName = "UserPW";
+            this.passwordCol.HeaderText = "Password";
+            this.passwordCol.MinimumWidth = 10;
+            this.passwordCol.Name = "passwordCol";
+            // 
+            // serviceCol
+            // 
+            this.serviceCol.DataPropertyName = "ServiceName";
+            this.serviceCol.HeaderText = "Service";
+            this.serviceCol.MinimumWidth = 10;
+            this.serviceCol.Name = "serviceCol";
+            // 
+            // categoryCol
+            // 
+            this.categoryCol.DataPropertyName = "Category";
+            this.categoryCol.HeaderText = "Category";
+            this.categoryCol.MinimumWidth = 10;
+            this.categoryCol.Name = "categoryCol";
+            // 
+            // noteCol
+            // 
+            this.noteCol.DataPropertyName = "Notes";
+            this.noteCol.HeaderText = "Notes";
+            this.noteCol.MinimumWidth = 10;
+            this.noteCol.Name = "noteCol";
             // 
             // frmMain
             // 
@@ -434,15 +440,15 @@ namespace MainMenu_Prototype
         private System.Windows.Forms.Button addEntryButton;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView dataView;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.BindingSource safepassdbDataSetBindingSource;
+        private _safepass_dbDataSet _safepass_dbDataSet;
+        private System.Windows.Forms.Button generatePass;
         private System.Windows.Forms.DataGridViewTextBoxColumn usernameCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn passwordCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn serviceCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn categoryCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn noteCol;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.BindingSource safepassdbDataSetBindingSource;
-        private _safepass_dbDataSet _safepass_dbDataSet;
-        private System.Windows.Forms.Button generatePass;
     }
 }
 
