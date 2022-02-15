@@ -63,11 +63,12 @@ namespace MainMenu_Prototype
             SqlConnection connection = new SqlConnection(builder.ConnectionString);
             connection.Open();
 
-            //SqlCommand command = new SqlCommand("SELECT * FROM Users", connection);
-            //SqlDataReader sdr = command.ExecuteReader();
-            //dataView.DataSource = sdr;
-            //dataView.dataBind();
+            SqlCommand command = new SqlCommand("SELECT UserEmail,UserPW,ServiceName,Category,Notes FROM Users", connection);
+            SqlDataAdapter sda = new SqlDataAdapter(command);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
 
+            dataView.DataSource = dt;
         }
 
         private void generatePass_Click(object sender, EventArgs e)
