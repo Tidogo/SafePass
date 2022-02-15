@@ -7,8 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 using System.Data.Sql;
 using System.Data.SqlClient;
+
 
 namespace MainMenu_Prototype
 {
@@ -61,10 +63,9 @@ namespace MainMenu_Prototype
             SqlConnection connection = new SqlConnection(builder.ConnectionString);
             connection.Open();
             SqlCommand command = new SqlCommand("SELECT * FROM Users", connection);
-            SqlDataAdapter sda = new SqlDataAdapter(command);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            dataGridView1.DataSource = dt;
+            SqlDataReader sdr = command.ExecuteReader();
+            dataView.DataSource = sdr;
+            //dataView.dataBind();
 
         }
     }
