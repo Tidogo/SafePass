@@ -52,14 +52,14 @@ namespace MainMenu_Prototype
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataView = new System.Windows.Forms.DataGridView();
-            this.safepassdbDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this._safepass_dbDataSet = new MainMenu_Prototype._safepass_dbDataSet();
             this.usernameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.passwordCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.serviceCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoryCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.noteCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pwstrength = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.safepassdbDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this._safepass_dbDataSet = new MainMenu_Prototype._safepass_dbDataSet();
             this.leftMainPanel.SuspendLayout();
             this.tagPanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
@@ -241,7 +241,7 @@ namespace MainMenu_Prototype
             this.panel1.Controls.Add(this.searchBox);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(200, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(600, 52);
             this.panel1.TabIndex = 1;
@@ -249,9 +249,9 @@ namespace MainMenu_Prototype
             // generatePass
             // 
             this.generatePass.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold);
-            this.generatePass.Location = new System.Drawing.Point(354, 0);
+            this.generatePass.Location = new System.Drawing.Point(438, 0);
             this.generatePass.Name = "generatePass";
-            this.generatePass.Size = new System.Drawing.Size(125, 52);
+            this.generatePass.Size = new System.Drawing.Size(83, 52);
             this.generatePass.TabIndex = 2;
             this.generatePass.Text = "Generate Password";
             this.generatePass.UseVisualStyleBackColor = true;
@@ -262,10 +262,10 @@ namespace MainMenu_Prototype
             this.addEntryButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.addEntryButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.addEntryButton.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addEntryButton.Location = new System.Drawing.Point(484, 0);
-            this.addEntryButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addEntryButton.Location = new System.Drawing.Point(526, 0);
+            this.addEntryButton.Margin = new System.Windows.Forms.Padding(2);
             this.addEntryButton.Name = "addEntryButton";
-            this.addEntryButton.Size = new System.Drawing.Size(116, 52);
+            this.addEntryButton.Size = new System.Drawing.Size(74, 52);
             this.addEntryButton.TabIndex = 1;
             this.addEntryButton.Text = "Edit Entry";
             this.addEntryButton.UseVisualStyleBackColor = true;
@@ -277,7 +277,7 @@ namespace MainMenu_Prototype
             this.searchBox.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchBox.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.searchBox.Location = new System.Drawing.Point(32, 14);
-            this.searchBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.searchBox.Margin = new System.Windows.Forms.Padding(2);
             this.searchBox.Name = "searchBox";
             this.searchBox.Size = new System.Drawing.Size(299, 29);
             this.searchBox.TabIndex = 0;
@@ -296,7 +296,7 @@ namespace MainMenu_Prototype
             this.panel2.Controls.Add(this.dataView);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(200, 52);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(600, 398);
             this.panel2.TabIndex = 2;
@@ -322,7 +322,7 @@ namespace MainMenu_Prototype
             this.dataView.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataView.GridColor = System.Drawing.Color.Silver;
             this.dataView.Location = new System.Drawing.Point(0, 0);
-            this.dataView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataView.Margin = new System.Windows.Forms.Padding(2);
             this.dataView.Name = "dataView";
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ControlDark;
@@ -338,16 +338,6 @@ namespace MainMenu_Prototype
             this.dataView.Size = new System.Drawing.Size(600, 398);
             this.dataView.TabIndex = 0;
             this.dataView.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataView_CellValueChanged);
-            // 
-            // safepassdbDataSetBindingSource
-            // 
-            this.safepassdbDataSetBindingSource.DataSource = this._safepass_dbDataSet;
-            this.safepassdbDataSetBindingSource.Position = 0;
-            // 
-            // _safepass_dbDataSet
-            // 
-            this._safepass_dbDataSet.DataSetName = "_safepass_dbDataSet";
-            this._safepass_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // usernameCol
             // 
@@ -389,6 +379,16 @@ namespace MainMenu_Prototype
             this.pwstrength.DataPropertyName = "UserPWSTR";
             this.pwstrength.HeaderText = "PW Strength";
             this.pwstrength.Name = "pwstrength";
+            // 
+            // safepassdbDataSetBindingSource
+            // 
+            this.safepassdbDataSetBindingSource.DataSource = this._safepass_dbDataSet;
+            this.safepassdbDataSetBindingSource.Position = 0;
+            // 
+            // _safepass_dbDataSet
+            // 
+            this._safepass_dbDataSet.DataSetName = "_safepass_dbDataSet";
+            this._safepass_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // frmMain
             // 
