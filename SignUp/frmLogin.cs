@@ -9,8 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using MainMenu_Prototype;
-using System.Net;
-using System.Net.Mail;
+using WindowsFormsApp1;
 
 namespace SafePass_Application
 {
@@ -68,29 +67,26 @@ namespace SafePass_Application
                 // code for finding and grabbing id of account which user entered credentials for
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
-                    String query = "SELECT * FROM Accounts WHERE AccountEmail LIKE @acemail AND AccountPW LIKE @acpw";
+                    String query = "SELECT AccountID FROM Accounts WHERE AccountEmail LIKE @acemail AND AccountPW LIKE @acpw";
                     connection.Open();
                     SqlCommand command = new SqlCommand(query, connection);
-                    command.Parameters.AddWithValue("@acemail", SqlDbType.VarChar);
-                    command.Parameters.AddWithValue("@acpw", SqlDbType.VarChar);
-                    command.Parameters["@acemail"].Value = username;
-                    command.Parameters["@acpw"].Value = password;
+                    command.Parameters.AddWithValue("@acemail", username);
+                    command.Parameters.AddWithValue("@acpw", password);
                     if (command.ExecuteScalar() == null)
                     {
                         MessageBox.Show("Login Failed!");
                     }
                     else
                     {
-                        /*var rand = new Random();
+                        var rand = new Random();
                         String r = rand.Next(0, 1000000).ToString("D6");
-                        Email(r, username);*/
+                        int authnum = int.Parse(r);
                         int id = (int)command.ExecuteScalar();
-                        MessageBox.Show("Login Successful!");
+                        new frmAuth(id, authnum, username).Show();
                         //MessageBox.Show(id.ToString());
                         // Opening a new main menu window
                         this.Hide();
                         // pass account id found in db to main menu
-                        new frmMain(id).Show();
                     }
                 }
             }
@@ -100,26 +96,5 @@ namespace SafePass_Application
             }
 
         }
-        /*public static void Email(string htmlString, string accEmail)
-        {
-            try
-            {
-                MailMessage message = new MailMessage();
-                SmtpClient smtp = new SmtpClient();
-                message.From = new MailAddress("megatimtams@gmail.com");
-                message.To.Add(new MailAddress(accEmail));
-                message.Subject = "2FA";
-                message.IsBodyHtml = true; //to make message body as html  
-                message.Body = htmlString;
-                smtp.Port = 587;
-                smtp.Host = "smtp.gmail.com"; //for gmail host  
-                smtp.EnableSsl = true;
-                smtp.UseDefaultCredentials = false;
-                smtp.Credentials = new NetworkCredential("FromMailAddress", "password");
-                smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
-                smtp.Send(message);
-            }
-            catch (Exception) { }
-        }*/
     }
 }

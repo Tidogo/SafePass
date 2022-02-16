@@ -56,3 +56,4 @@ C:\Users\Admin\source\repos\SafePass10\SignUp\obj\Debug\Main_Project.csproj.Core
 C:\Users\Admin\source\repos\SafePass10\SignUp\obj\Debug\Main_Project.csproj.CopyComplete
 C:\Users\Admin\source\repos\SafePass10\SignUp\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Admin\source\repos\SafePass10\SignUp\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\WindowsFormsApp1.frmAuth.resources

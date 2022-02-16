@@ -26,6 +26,7 @@ namespace MainMenu_Prototype
             /*
             * For the update user button
             * */
+            int strength = PassMethods.checkPassStrength(txtUserPW.Text);
 
             try
             {
@@ -52,7 +53,11 @@ namespace MainMenu_Prototype
                     command.Parameters.AddWithValue("@servname", txtServiceName.Text);
                     command.Parameters.AddWithValue("@servurl", txtServiceURL.Text);
                     command.Parameters.AddWithValue("@uid", userid.Text);
-                    command.Parameters.AddWithValue("@upwstr", PassMethods.checkPassStrength(txtUserPW.Text));
+                    command.Parameters.AddWithValue("@upwstr", strength);
+                    if (strength < 2)
+                    {
+                        MessageBox.Show("Your password is weak, we recommend you update it in the future.");
+                    }
                     command.ExecuteNonQuery();
                     new frmMain(id).Show();
                     this.Hide();

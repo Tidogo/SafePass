@@ -71,8 +71,8 @@ namespace SafePass_Application
                     String query = "INSERT INTO Accounts (AccountEmail,AccountPW) VALUES (@amail, @apw)";
 
                     SqlCommand command = new SqlCommand(query, connection);
-                    command.Parameters.AddWithValue("@amail", txtConfPassword.Text);
-                    command.Parameters.AddWithValue("@apw", txtEmail.Text);
+                    command.Parameters.AddWithValue("@amail", txtEmail.Text);
+                    command.Parameters.AddWithValue("@apw", txtConfPassword.Text);
 
                     command.ExecuteNonQuery();
                     new frmLogin().Show();

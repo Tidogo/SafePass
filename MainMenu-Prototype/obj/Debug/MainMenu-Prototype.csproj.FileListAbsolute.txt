@@ -42,7 +42,6 @@ C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\bin\Debug\MainMen
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\bin\Debug\System.Management.Automation.dll
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\bin\Debug\Microsoft.Management.Infrastructure.dll
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\bin\Debug\System.Management.Automation.xml
-C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\MainMenu-Prototype.csproj.AssemblyReference.cache
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\MainMenu-Prototype.csproj.SuggestedBindingRedirects.cache
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\MainMenu_Prototype.Properties.Resources.resources
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\MainMenu-Prototype.csproj.GenerateResource.cache

@@ -50,6 +50,7 @@ namespace MainMenu_Prototype
                 // code for generating sql query to insert new account into database
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
+                    int strength = PassMethods.checkPassStrength(txtUserPW.Text);
                     connection.Open();
                     String query = "INSERT INTO Users (UserPW,UserEmail,Category,Notes,AccountID,ServiceName,ServiceURL,UserPWSTR) " +
                         "VALUES (@upw, @umail, @cat, @notes, @aid, @servname, @servurl, @upwstr)";
@@ -62,7 +63,11 @@ namespace MainMenu_Prototype
                     command.Parameters.AddWithValue("@aid", id);
                     command.Parameters.AddWithValue("@servname", txtServiceName.Text);
                     command.Parameters.AddWithValue("@servurl", txtServiceURL.Text);
-                    command.Parameters.AddWithValue("@upwstr", PassMethods.checkPassStrength(txtUserPW.Text));
+                    command.Parameters.AddWithValue("@upwstr", strength);
+                    if (strength < 2)
+                    {
+                        MessageBox.Show("Your password is weak, we recommend you update it in the future");
+                    }
                     command.ExecuteNonQuery();
                     new frmMain(id).Show();
                     this.Hide();
