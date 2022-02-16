@@ -79,7 +79,46 @@ namespace MainMenu_Prototype
 
         private void dataView_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
+            if(dataView.CurrentRow != null)
+            {
+                try
+                {
+                    // default connection string for any connection to safepass-db
+                    SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+                    builder.DataSource = "safepass-serv.database.windows.net";
+                    builder.UserID = "db-admin";
+                    builder.Password = "af8kK$T7Da";
+                    builder.InitialCatalog = "safepass-db";
 
+                    // code for generating sql query to insert new account into database
+                    using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
+                    {
+                        if (id == 0)
+                        {
+                            connection.Open();
+
+                            DataGridViewRow curRow = dataView.CurrentRow;
+                            String query = "INSERT INTO Users (UserPW,UserEmail,Category,Notes,AccountID,ServiceName,ServiceURL) " +
+                                "VALUES (@upw, @umail, @cat, @notes, @aid, @servname, @servurl)";
+                            SqlCommand command = new SqlCommand(query, connection);
+                            command.Parameters.AddWithValue("@upw", curRow.Cells["passwordCol"].Value);
+                            command.Parameters.AddWithValue("@umail", curRow.Cells["usernameCol"].Value);
+                            command.Parameters.AddWithValue("@cat", curRow.Cells["categoryCol"].Value);
+                            command.Parameters.AddWithValue("@notes", curRow.Cells["noteCol"].Value);
+                            command.Parameters.AddWithValue("@aid", id);
+                            command.Parameters.AddWithValue("@servname", curRow.Cells["serviceCol"].Value);
+                            command.Parameters.AddWithValue("@servurl", curRow.Cells["usernameCol"].Value);
+
+                        
+                            command.ExecuteNonQuery();
+                        }
+                    }
+                }
+                catch (SqlException ec)
+                {
+                    Console.WriteLine(ec.ToString());
+                }
+            }
         }
     }
 }
