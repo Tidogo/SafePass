@@ -438,9 +438,6 @@ namespace MainMenu_Prototype
         private System.Windows.Forms.BindingSource safepassdbDataSetBindingSource;
         private _safepass_dbDataSet _safepass_dbDataSet;
         private System.Windows.Forms.DataGridView dataView;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.BindingSource safepassdbDataSetBindingSource;
-        private _safepass_dbDataSet _safepass_dbDataSet;
         private System.Windows.Forms.Button generatePass;
         private System.Windows.Forms.DataGridViewTextBoxColumn usernameCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn passwordCol;
