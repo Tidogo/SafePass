@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using MainMenu_Prototype;
+using System.Net;
+using System.Net.Mail;
 
 namespace SafePass_Application
 {
@@ -79,6 +81,9 @@ namespace SafePass_Application
                     }
                     else
                     {
+                        /*var rand = new Random();
+                        String r = rand.Next(0, 1000000).ToString("D6");
+                        Email(r, username);*/
                         int id = (int)command.ExecuteScalar();
                         MessageBox.Show("Login Successful!");
                         //MessageBox.Show(id.ToString());
@@ -93,6 +98,28 @@ namespace SafePass_Application
             {
                 Console.WriteLine(ec.ToString());
             }
+
         }
+        /*public static void Email(string htmlString, string accEmail)
+        {
+            try
+            {
+                MailMessage message = new MailMessage();
+                SmtpClient smtp = new SmtpClient();
+                message.From = new MailAddress("megatimtams@gmail.com");
+                message.To.Add(new MailAddress(accEmail));
+                message.Subject = "2FA";
+                message.IsBodyHtml = true; //to make message body as html  
+                message.Body = htmlString;
+                smtp.Port = 587;
+                smtp.Host = "smtp.gmail.com"; //for gmail host  
+                smtp.EnableSsl = true;
+                smtp.UseDefaultCredentials = false;
+                smtp.Credentials = new NetworkCredential("FromMailAddress", "password");
+                smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                smtp.Send(message);
+            }
+            catch (Exception) { }
+        }*/
     }
 }

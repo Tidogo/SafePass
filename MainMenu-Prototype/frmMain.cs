@@ -7,8 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 using System.Data.Sql;
 using System.Data.SqlClient;
+
 
 namespace MainMenu_Prototype
 {
@@ -46,6 +48,7 @@ namespace MainMenu_Prototype
             this.Hide();
         }
 
+
         private void dataView_Load(object sender, EventArgs e)
         {
             dataView.DataSource = GetUserList();
@@ -64,15 +67,50 @@ namespace MainMenu_Prototype
             using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
             {
                 String query = "SELECT UserEmail,UserPW,Category, ServiceURL, Notes FROM Users WHERE AccountID LIKE @acID";
-                connection.Open();
+            connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@acID",SqlDbType.VarChar);
                 command.Parameters["@acID"].Value = id;
 
                 SqlDataReader reader = command.ExecuteReader();
                 dtTable.Load(reader);
-            }
+        }
             return dtTable;
+
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            bindData();
+        }
+
+        void bindData()
+        {
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+            builder.DataSource = "safepass-serv.database.windows.net";
+            builder.UserID = "db-admin";
+            builder.Password = "af8kK$T7Da";
+            builder.InitialCatalog = "safepass-db";
+
+            SqlConnection connection = new SqlConnection(builder.ConnectionString);
+            connection.Open();
+
+            SqlCommand command = new SqlCommand("SELECT UserEmail,UserPW,ServiceName,Category,Notes, UserPWSTR FROM Users", connection);
+            SqlDataAdapter sda = new SqlDataAdapter(command);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+
+            dataView.DataSource = dt;
+        }
+
+        private void generatePass_Click(object sender, EventArgs e)
+        {
+            new frmGenPass(id).Show();
+            this.Hide();
+        }
+
+        private void dataView_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
 

@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmGenPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGenPass.Designer.cs">
+      <DependentUpon>frmGenPass.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,19 @@
     <Compile Include="frmPassAdd.Designer.cs">
       <DependentUpon>frmPassAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPassDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPassDelete.Designer.cs">
+      <DependentUpon>frmPassDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPassUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPassUpdate.Designer.cs">
+      <DependentUpon>frmPassUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PassMethods.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="_safepass_dbDataSet.Designer.cs">
@@ -68,11 +87,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_safepass_dbDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmGenPass.resx">
+      <DependentUpon>frmGenPass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPassAdd.resx">
       <DependentUpon>frmPassAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPassDelete.resx">
+      <DependentUpon>frmPassDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPassUpdate.resx">
+      <DependentUpon>frmPassUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
