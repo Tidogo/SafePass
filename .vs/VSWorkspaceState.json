@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\MainMenu-Prototype",
+    "\\SignUp"
   ],
-  "SelectedNode": "\\MainMenu_Prototype.sln",
+  "SelectedNode": "\\SignUp\\frmLogin.cs",
   "PreviewInSolutionExplorer": false
 }
