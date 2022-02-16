@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using MainMenu_Prototype;
 
 namespace MainMenu_Prototype
 {
@@ -39,7 +40,8 @@ namespace MainMenu_Prototype
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
                     connection.Open();
-                    String query = "UPDATE Users set UserPW = @upw,UserEmail = @umail,Category = @cat,Notes = @notes,ServiceName = @servname,AccountID = @aid,ServiceURL = @servurl WHERE UserID = @uid";
+                    String query = "UPDATE Users set UserPW = @upw,UserEmail = @umail,Category = @cat,Notes = @notes,ServiceName = @servname,AccountID = @aid,ServiceURL = @servurl, " +
+                        "UserPWSTR = @upwstr WHERE UserID = @uid";
 
                     SqlCommand command = new SqlCommand(query, connection);
                     command.Parameters.AddWithValue("@upw", txtUserPW.Text);
@@ -50,6 +52,7 @@ namespace MainMenu_Prototype
                     command.Parameters.AddWithValue("@servname", txtServiceName.Text);
                     command.Parameters.AddWithValue("@servurl", txtServiceURL.Text);
                     command.Parameters.AddWithValue("@uid", userid.Text);
+                    command.Parameters.AddWithValue("@upwstr", PassMethods.checkPassStrength(txtUserPW.Text));
                     command.ExecuteNonQuery();
                     new frmMain(id).Show();
                     this.Hide();

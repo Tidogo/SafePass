@@ -51,8 +51,8 @@ namespace MainMenu_Prototype
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
                     connection.Open();
-                    String query = "INSERT INTO Users (UserPW,UserEmail,Category,Notes,AccountID,ServiceName,ServiceURL) " +
-                        "VALUES (@upw, @umail, @cat, @notes, @aid, @servname, @servurl)";
+                    String query = "INSERT INTO Users (UserPW,UserEmail,Category,Notes,AccountID,ServiceName,ServiceURL,UserPWSTR) " +
+                        "VALUES (@upw, @umail, @cat, @notes, @aid, @servname, @servurl, @upwstr)";
 
                     SqlCommand command = new SqlCommand(query, connection);
                     command.Parameters.AddWithValue("@upw", txtUserPW.Text);
@@ -62,6 +62,7 @@ namespace MainMenu_Prototype
                     command.Parameters.AddWithValue("@aid", id);
                     command.Parameters.AddWithValue("@servname", txtServiceName.Text);
                     command.Parameters.AddWithValue("@servurl", txtServiceURL.Text);
+                    command.Parameters.AddWithValue("@upwstr", PassMethods.checkPassStrength(txtUserPW.Text));
                     command.ExecuteNonQuery();
                     new frmMain(id).Show();
                     this.Hide();
@@ -87,45 +88,5 @@ namespace MainMenu_Prototype
             this.Hide();
         }
 
-        private int checkPassStrength(string pass)
-        {
-            int strength = 0;
-            var hasNumber = new Regex(@"[0-9]+");
-            var hasUpperChar = new Regex(@"[A-Z]+");
-            var hasMinimum8Chars = new Regex(@".{8,}");
-            var hasSymbols = new Regex(@"[!@#$%^&*()_+=\[{\]};:<>|./?,-]");
-            if (hasMinimum8Chars.IsMatch(pass) == true)
-            {
-                if (hasNumber.IsMatch(pass) == true & hasUpperChar.IsMatch(pass) == true)
-                {
-                    if (hasSymbols.IsMatch(pass) == true)
-                    {
-                        strength = 4;
-                    }
-                    else
-                    {
-                        strength = 3;
-                    }
-                }
-                else
-                {
-                    strength = 2;
-                }
-
-            }
-            else
-            {
-                if (hasNumber.IsMatch(pass) == true & hasUpperChar.IsMatch(pass) == true)
-                {
-                    strength = 1;
-                }
-                else
-                {
-                    strength = 0;
-                }
-            }
-
-            return strength;
-        }
     }
 }

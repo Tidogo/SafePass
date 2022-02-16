@@ -15,7 +15,7 @@ using System.Data.SqlClient;
 namespace MainMenu_Prototype
 {
 
-    public partial class frmMain : Form
+    public partial class frmMain : System.Windows.Forms.Form
     {
         // account id stored in this public variable
         public int id = 0;
@@ -25,6 +25,7 @@ namespace MainMenu_Prototype
         {
             InitializeComponent();
             id = loginid;
+            this.Load += new EventHandler(dataView_Load);
         }
 
         //Event handler for search box in main menu
@@ -47,6 +48,37 @@ namespace MainMenu_Prototype
             this.Hide();
         }
 
+
+        private void dataView_Load(object sender, EventArgs e)
+        {
+            dataView.DataSource = GetUserList();
+        }
+
+        private DataTable GetUserList()
+        {
+            DataTable dtTable = new DataTable();
+
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+            builder.DataSource = "safepass-serv.database.windows.net";
+            builder.UserID = "db-admin";
+            builder.Password = "af8kK$T7Da";
+            builder.InitialCatalog = "safepass-db";
+
+            using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
+            {
+                String query = "SELECT UserEmail,UserPW,Category, ServiceURL, Notes FROM Users WHERE AccountID LIKE @acID";
+            connection.Open();
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@acID",SqlDbType.VarChar);
+                command.Parameters["@acID"].Value = id;
+
+                SqlDataReader reader = command.ExecuteReader();
+                dtTable.Load(reader);
+        }
+            return dtTable;
+
+        }
+
         private void frmMain_Load(object sender, EventArgs e)
         {
             bindData();
@@ -63,7 +95,7 @@ namespace MainMenu_Prototype
             SqlConnection connection = new SqlConnection(builder.ConnectionString);
             connection.Open();
 
-            SqlCommand command = new SqlCommand("SELECT UserEmail,UserPW,ServiceName,Category,Notes FROM Users", connection);
+            SqlCommand command = new SqlCommand("SELECT UserEmail,UserPW,ServiceName,Category,Notes, UserPWSTR FROM Users", connection);
             SqlDataAdapter sda = new SqlDataAdapter(command);
             DataTable dt = new DataTable();
             sda.Fill(dt);
@@ -120,5 +152,6 @@ namespace MainMenu_Prototype
                 }
             }
         }
+
     }
 }
