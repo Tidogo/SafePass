@@ -23,6 +23,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
             identity = id;
             authcode = code;
+            txtDevAuth.Text = authcode.ToString();
             emailaddress = email;
             Email(authcode.ToString(), emailaddress);
         }
@@ -78,6 +79,11 @@ namespace WindowsFormsApp1
             int authnum = int.Parse(r);
             Email(authcode.ToString(), emailaddress);
             MessageBox.Show("New code sent!");
+        }
+
+        private void txtDevAuth_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

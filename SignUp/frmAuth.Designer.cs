@@ -33,6 +33,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnResend = new System.Windows.Forms.Button();
+            this.txtDevAuth = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnEnter
@@ -84,11 +86,30 @@
             this.btnResend.UseVisualStyleBackColor = true;
             this.btnResend.Click += new System.EventHandler(this.btnResend_Click);
             // 
+            // txtDevAuth
+            // 
+            this.txtDevAuth.Location = new System.Drawing.Point(618, 279);
+            this.txtDevAuth.Name = "txtDevAuth";
+            this.txtDevAuth.Size = new System.Drawing.Size(100, 20);
+            this.txtDevAuth.TabIndex = 5;
+            this.txtDevAuth.TextChanged += new System.EventHandler(this.txtDevAuth_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(618, 260);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(54, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "FOR DEV";
+            // 
             // frmAuth
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtDevAuth);
             this.Controls.Add(this.btnResend);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -108,5 +129,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnResend;
+        private System.Windows.Forms.TextBox txtDevAuth;
+        private System.Windows.Forms.Label label3;
     }
 }

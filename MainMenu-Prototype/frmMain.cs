@@ -19,7 +19,6 @@ namespace MainMenu_Prototype
     {
         // account id stored in this public variable
         public int id = 0;
-
         // Make the form to use the entered credentials to show only their own data
         public frmMain(int loginid)
         {
@@ -153,5 +152,10 @@ namespace MainMenu_Prototype
             }
         }
 
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            new frmHelp(id).Show();
+            this.Hide();
+        }
     }
 }

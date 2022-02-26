@@ -32,8 +32,8 @@ namespace MainMenu_Prototype
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.leftMainPanel = new System.Windows.Forms.Panel();
             this.tagPanel = new System.Windows.Forms.Panel();
             this.addTagButton = new System.Windows.Forms.Button();
@@ -61,6 +61,7 @@ namespace MainMenu_Prototype
             this.pwstrength = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.safepassdbDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this._safepass_dbDataSet = new MainMenu_Prototype._safepass_dbDataSet();
+            this.btnHelp = new System.Windows.Forms.Button();
             this.leftMainPanel.SuspendLayout();
             this.tagPanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
@@ -81,7 +82,7 @@ namespace MainMenu_Prototype
             this.leftMainPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.leftMainPanel.Location = new System.Drawing.Point(0, 0);
             this.leftMainPanel.Name = "leftMainPanel";
-            this.leftMainPanel.Size = new System.Drawing.Size(200, 450);
+            this.leftMainPanel.Size = new System.Drawing.Size(200, 555);
             this.leftMainPanel.TabIndex = 0;
             // 
             // tagPanel
@@ -237,6 +238,7 @@ namespace MainMenu_Prototype
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnHelp);
             this.panel1.Controls.Add(this.generatePass);
             this.panel1.Controls.Add(this.addEntryButton);
             this.panel1.Controls.Add(this.searchBox);
@@ -244,13 +246,13 @@ namespace MainMenu_Prototype
             this.panel1.Location = new System.Drawing.Point(200, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(600, 52);
+            this.panel1.Size = new System.Drawing.Size(850, 52);
             this.panel1.TabIndex = 1;
             // 
             // generatePass
             // 
             this.generatePass.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold);
-            this.generatePass.Location = new System.Drawing.Point(438, 0);
+            this.generatePass.Location = new System.Drawing.Point(599, 0);
             this.generatePass.Name = "generatePass";
             this.generatePass.Size = new System.Drawing.Size(83, 52);
             this.generatePass.TabIndex = 2;
@@ -263,7 +265,7 @@ namespace MainMenu_Prototype
             this.addEntryButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.addEntryButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.addEntryButton.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addEntryButton.Location = new System.Drawing.Point(526, 0);
+            this.addEntryButton.Location = new System.Drawing.Point(776, 0);
             this.addEntryButton.Margin = new System.Windows.Forms.Padding(2);
             this.addEntryButton.Name = "addEntryButton";
             this.addEntryButton.Size = new System.Drawing.Size(74, 52);
@@ -299,13 +301,13 @@ namespace MainMenu_Prototype
             this.panel2.Location = new System.Drawing.Point(200, 52);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(600, 398);
+            this.panel2.Size = new System.Drawing.Size(850, 398);
             this.panel2.TabIndex = 2;
             // 
             // dataView
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
-            this.dataView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
+            this.dataView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataView.AutoGenerateColumns = false;
             this.dataView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataView.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
@@ -325,18 +327,18 @@ namespace MainMenu_Prototype
             this.dataView.Location = new System.Drawing.Point(0, 0);
             this.dataView.Margin = new System.Windows.Forms.Padding(2);
             this.dataView.Name = "dataView";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ControlDark;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.LightSeaGreen;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataView.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.LightSeaGreen;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataView.RowHeadersWidth = 198;
             this.dataView.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.dataView.RowTemplate.Height = 33;
-            this.dataView.Size = new System.Drawing.Size(600, 398);
+            this.dataView.Size = new System.Drawing.Size(850, 398);
             this.dataView.TabIndex = 0;
             this.dataView.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataView_CellValueChanged);
             // 
@@ -361,14 +363,14 @@ namespace MainMenu_Prototype
             this.serviceCol.MinimumWidth = 10;
             this.serviceCol.Name = "serviceCol";
             // 
-            // safepassdbDataSetBindingSource
+            // categoryCol
             // 
             this.categoryCol.DataPropertyName = "Category";
             this.categoryCol.HeaderText = "Category";
             this.categoryCol.MinimumWidth = 10;
             this.categoryCol.Name = "categoryCol";
             // 
-            // _safepass_dbDataSet
+            // noteCol
             // 
             this.noteCol.DataPropertyName = "Notes";
             this.noteCol.HeaderText = "Notes";
@@ -391,11 +393,22 @@ namespace MainMenu_Prototype
             this._safepass_dbDataSet.DataSetName = "_safepass_dbDataSet";
             this._safepass_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // btnHelp
+            // 
+            this.btnHelp.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold);
+            this.btnHelp.Location = new System.Drawing.Point(688, 0);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(83, 52);
+            this.btnHelp.TabIndex = 3;
+            this.btnHelp.Text = "Help";
+            this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1050, 555);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.leftMainPanel);
@@ -445,6 +458,7 @@ namespace MainMenu_Prototype
         private System.Windows.Forms.DataGridViewTextBoxColumn categoryCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn noteCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn pwstrength;
+        private Button btnHelp;
     }
 }
 
