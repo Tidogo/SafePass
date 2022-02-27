@@ -157,5 +157,11 @@ namespace MainMenu_Prototype
             new frmHelp(id).Show();
             this.Hide();
         }
+
+        private void btnResetMasterPass_Click(object sender, EventArgs e)
+        {
+            new frmResetMasterPass(id).Show();
+            this.Hide();
+        }
     }
 }

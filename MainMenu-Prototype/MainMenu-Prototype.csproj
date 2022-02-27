@@ -85,6 +85,12 @@
     <Compile Include="frmPassUpdate.Designer.cs">
       <DependentUpon>frmPassUpdate.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmResetMasterPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResetMasterPass.Designer.cs">
+      <DependentUpon>frmResetMasterPass.cs</DependentUpon>
+    </Compile>
     <Compile Include="PassMethods.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPassUpdate.resx">
       <DependentUpon>frmPassUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResetMasterPass.resx">
+      <DependentUpon>frmResetMasterPass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

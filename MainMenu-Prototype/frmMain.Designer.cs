@@ -32,8 +32,8 @@ namespace MainMenu_Prototype
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.leftMainPanel = new System.Windows.Forms.Panel();
             this.tagPanel = new System.Windows.Forms.Panel();
             this.addTagButton = new System.Windows.Forms.Button();
@@ -47,6 +47,7 @@ namespace MainMenu_Prototype
             this.logoPanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnHelp = new System.Windows.Forms.Button();
             this.generatePass = new System.Windows.Forms.Button();
             this.addEntryButton = new System.Windows.Forms.Button();
             this.searchBox = new System.Windows.Forms.TextBox();
@@ -61,7 +62,7 @@ namespace MainMenu_Prototype
             this.pwstrength = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.safepassdbDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this._safepass_dbDataSet = new MainMenu_Prototype._safepass_dbDataSet();
-            this.btnHelp = new System.Windows.Forms.Button();
+            this.btnResetMasterPass = new System.Windows.Forms.Button();
             this.leftMainPanel.SuspendLayout();
             this.tagPanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
@@ -238,6 +239,7 @@ namespace MainMenu_Prototype
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnResetMasterPass);
             this.panel1.Controls.Add(this.btnHelp);
             this.panel1.Controls.Add(this.generatePass);
             this.panel1.Controls.Add(this.addEntryButton);
@@ -248,6 +250,17 @@ namespace MainMenu_Prototype
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(850, 52);
             this.panel1.TabIndex = 1;
+            // 
+            // btnHelp
+            // 
+            this.btnHelp.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold);
+            this.btnHelp.Location = new System.Drawing.Point(688, 0);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(83, 52);
+            this.btnHelp.TabIndex = 3;
+            this.btnHelp.Text = "Help";
+            this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // generatePass
             // 
@@ -306,8 +319,8 @@ namespace MainMenu_Prototype
             // 
             // dataView
             // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
-            this.dataView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
+            this.dataView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataView.AutoGenerateColumns = false;
             this.dataView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataView.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
@@ -327,14 +340,14 @@ namespace MainMenu_Prototype
             this.dataView.Location = new System.Drawing.Point(0, 0);
             this.dataView.Margin = new System.Windows.Forms.Padding(2);
             this.dataView.Name = "dataView";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ControlDark;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.LightSeaGreen;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.LightSeaGreen;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataView.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataView.RowHeadersWidth = 198;
             this.dataView.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.dataView.RowTemplate.Height = 33;
@@ -393,16 +406,16 @@ namespace MainMenu_Prototype
             this._safepass_dbDataSet.DataSetName = "_safepass_dbDataSet";
             this._safepass_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // btnHelp
+            // btnResetMasterPass
             // 
-            this.btnHelp.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold);
-            this.btnHelp.Location = new System.Drawing.Point(688, 0);
-            this.btnHelp.Name = "btnHelp";
-            this.btnHelp.Size = new System.Drawing.Size(83, 52);
-            this.btnHelp.TabIndex = 3;
-            this.btnHelp.Text = "Help";
-            this.btnHelp.UseVisualStyleBackColor = true;
-            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            this.btnResetMasterPass.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold);
+            this.btnResetMasterPass.Location = new System.Drawing.Point(475, 0);
+            this.btnResetMasterPass.Name = "btnResetMasterPass";
+            this.btnResetMasterPass.Size = new System.Drawing.Size(118, 52);
+            this.btnResetMasterPass.TabIndex = 4;
+            this.btnResetMasterPass.Text = "Reset Master Pass";
+            this.btnResetMasterPass.UseVisualStyleBackColor = true;
+            this.btnResetMasterPass.Click += new System.EventHandler(this.btnResetMasterPass_Click);
             // 
             // frmMain
             // 
@@ -459,6 +472,7 @@ namespace MainMenu_Prototype
         private System.Windows.Forms.DataGridViewTextBoxColumn noteCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn pwstrength;
         private Button btnHelp;
+        private Button btnResetMasterPass;
     }
 }
 
