@@ -76,6 +76,7 @@ namespace SafePass_Application
 
                     command.ExecuteNonQuery();
                     new frmLogin().Show();
+                    connection.Close();
                     this.Hide();
                 }
             }

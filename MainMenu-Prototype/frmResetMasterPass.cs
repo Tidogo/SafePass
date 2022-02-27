@@ -53,6 +53,7 @@ namespace MainMenu_Prototype
                         command.ExecuteNonQuery();
                         MessageBox.Show("Password changed successfully!");
                         new frmMain(identity).Show();
+                        connection.Close();
                         this.Hide();
                     }
                 }

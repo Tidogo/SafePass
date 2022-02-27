@@ -60,6 +60,7 @@ namespace MainMenu_Prototype
                         MessageBox.Show("Your password is weak, we recommend you update it in the future.");
                     }
                     command.ExecuteNonQuery();
+                    connection.Close();
                     new frmMain(id).Show();
                     this.Hide();
                 }

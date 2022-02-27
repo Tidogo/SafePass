@@ -51,7 +51,7 @@ namespace SafePass_Application
             this.Hide();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        public void btnLogin_Click(object sender, EventArgs e)
         {
             string username = txtUsername.Text;
             string password = txtPassword.Text;
@@ -88,6 +88,7 @@ namespace SafePass_Application
                         this.Hide();
                         // pass account id found in db to main menu
                     }
+                    connection.Close();
                 }
             }
             catch (SqlException ec)

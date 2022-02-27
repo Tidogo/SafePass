@@ -66,13 +66,14 @@ namespace MainMenu_Prototype
             using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
             {
                 String query = "SELECT UserEmail,UserPW,Category, ServiceURL, Notes FROM Users WHERE AccountID LIKE @acID";
-            connection.Open();
+                connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@acID",SqlDbType.VarChar);
                 command.Parameters["@acID"].Value = id;
 
                 SqlDataReader reader = command.ExecuteReader();
                 dtTable.Load(reader);
+                connection.Close();
         }
             return dtTable;
 
@@ -100,6 +101,7 @@ namespace MainMenu_Prototype
             sda.Fill(dt);
 
             dataView.DataSource = dt;
+            connection.Close();
         }
 
         private void generatePass_Click(object sender, EventArgs e)
@@ -142,6 +144,7 @@ namespace MainMenu_Prototype
 
                         
                             command.ExecuteNonQuery();
+                            connection.Close();
                         }
                     }
                 }

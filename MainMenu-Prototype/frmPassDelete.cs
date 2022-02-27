@@ -45,6 +45,7 @@ namespace MainMenu_Prototype
                     command.Parameters.AddWithValue("@uname", txtUserEmail.Text);
                     command.ExecuteNonQuery();
                     new frmMain(id).Show();
+                    connection.Close();
                     this.Hide();
                 }
             }

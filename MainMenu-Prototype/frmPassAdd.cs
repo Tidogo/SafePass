@@ -70,6 +70,7 @@ namespace MainMenu_Prototype
                     }
                     command.ExecuteNonQuery();
                     new frmMain(id).Show();
+                    connection.Close();
                     this.Hide();
                 }
             }
@@ -93,5 +94,10 @@ namespace MainMenu_Prototype
             this.Hide();
         }
 
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            new frmMain(id).Show();
+            this.Hide();
+        }
     }
 }
