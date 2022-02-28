@@ -32,12 +32,12 @@ namespace MainMenu_Prototype
         //to allow new entry.
         private void searchBox_Click(object sender, EventArgs e)
         {
-            if (searchBox.Text == "Search Vault")
+            if (txtSearchBox.Text == "Search Vault")
             {
-                searchBox.Text = " ";
-            } else if (string.IsNullOrEmpty(searchBox.Text))
+                txtSearchBox.Text = " ";
+            } else if (string.IsNullOrEmpty(txtSearchBox.Text))
             {
-                searchBox.Text = "Search Vault";
+                txtSearchBox.Text = "Search Vault";
             }
         }
 
@@ -164,6 +164,48 @@ namespace MainMenu_Prototype
         {
             new frmResetMasterPass(id).Show();
             this.Hide();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrWhiteSpace(txtSearchBox.Text))
+            {
+                MessageBox.Show("Please type in something to search by before searching.");
+            }
+            else if (cboSearch.SelectedIndex == 0)
+            {
+                (dataView.DataSource as DataTable).DefaultView.RowFilter = string.Format("Convert(UserEmail, 'System.String') Like '%{0}%'", txtSearchBox.Text);
+            }
+            else if (cboSearch.SelectedIndex == 1)
+            {
+                (dataView.DataSource as DataTable).DefaultView.RowFilter = string.Format("Convert(UserPW, 'System.String') Like '%{0}%'", txtSearchBox.Text);
+            }
+            else if (cboSearch.SelectedIndex == 2)
+            {
+                (dataView.DataSource as DataTable).DefaultView.RowFilter = string.Format("Convert(ServiceName, 'System.String') Like '%{0}%'", txtSearchBox.Text);
+            }
+            else if (cboSearch.SelectedIndex == 3)
+            {
+                (dataView.DataSource as DataTable).DefaultView.RowFilter = string.Format("Convert(Category, 'System.String') Like '%{0}%'", txtSearchBox.Text);
+            }
+            else if (cboSearch.SelectedIndex == 4)
+            {
+                (dataView.DataSource as DataTable).DefaultView.RowFilter = string.Format("Convert(Notes, 'System.String') Like '%{0}%'", txtSearchBox.Text);
+            }
+            else if (cboSearch.SelectedIndex == 5)
+            {
+                (dataView.DataSource as DataTable).DefaultView.RowFilter = string.Format("Convert(UserPWSTR, 'System.String') Like '%{0}%'", txtSearchBox.Text);
+            }
+            else
+            {
+                MessageBox.Show("Please select a search filter before searching.");
+            }
+
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            (dataView.DataSource as DataTable).DefaultView.RowFilter = null;
         }
     }
 }

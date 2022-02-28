@@ -36,32 +36,35 @@ namespace MainMenu_Prototype
             this.leftMainPanel = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.logoPanel = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnResetMasterPass = new System.Windows.Forms.Button();
             this.btnHelp = new System.Windows.Forms.Button();
             this.generatePass = new System.Windows.Forms.Button();
             this.addEntryButton = new System.Windows.Forms.Button();
-            this.searchBox = new System.Windows.Forms.TextBox();
+            this.txtSearchBox = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataView = new System.Windows.Forms.DataGridView();
+            this.safepassdbDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this._safepass_dbDataSet = new MainMenu_Prototype._safepass_dbDataSet();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.cboSearch = new System.Windows.Forms.ComboBox();
+            this.btnReset = new System.Windows.Forms.Button();
             this.usernameCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.passwordCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.serviceCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoryCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.noteCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pwstrength = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.safepassdbDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this._safepass_dbDataSet = new MainMenu_Prototype._safepass_dbDataSet();
             this.leftMainPanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.safepassdbDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._safepass_dbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // leftMainPanel
@@ -103,19 +106,13 @@ namespace MainMenu_Prototype
             this.logoPanel.Size = new System.Drawing.Size(195, 50);
             this.logoPanel.TabIndex = 0;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MainMenu_Prototype.Properties.Resources.white_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(7, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(188, 49);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnReset);
+            this.panel1.Controls.Add(this.cboSearch);
+            this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.addEntryButton);
-            this.panel1.Controls.Add(this.searchBox);
+            this.panel1.Controls.Add(this.txtSearchBox);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(195, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
@@ -170,18 +167,18 @@ namespace MainMenu_Prototype
             this.addEntryButton.UseVisualStyleBackColor = true;
             this.addEntryButton.Click += new System.EventHandler(this.addEntryButton_Click);
             // 
-            // searchBox
+            // txtSearchBox
             // 
-            this.searchBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.searchBox.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchBox.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.searchBox.Location = new System.Drawing.Point(32, 14);
-            this.searchBox.Margin = new System.Windows.Forms.Padding(2);
-            this.searchBox.Name = "searchBox";
-            this.searchBox.Size = new System.Drawing.Size(299, 29);
-            this.searchBox.TabIndex = 0;
-            this.searchBox.Text = "Search Vault";
-            this.searchBox.Click += new System.EventHandler(this.searchBox_Click);
+            this.txtSearchBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSearchBox.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchBox.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.txtSearchBox.Location = new System.Drawing.Point(32, 14);
+            this.txtSearchBox.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSearchBox.Name = "txtSearchBox";
+            this.txtSearchBox.Size = new System.Drawing.Size(299, 29);
+            this.txtSearchBox.TabIndex = 0;
+            this.txtSearchBox.Text = "Search Vault";
+            this.txtSearchBox.Click += new System.EventHandler(this.searchBox_Click);
             // 
             // textBox1
             // 
@@ -238,10 +235,66 @@ namespace MainMenu_Prototype
             this.dataView.TabIndex = 0;
             this.dataView.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataView_CellValueChanged);
             // 
+            // safepassdbDataSetBindingSource
+            // 
+            this.safepassdbDataSetBindingSource.DataSource = this._safepass_dbDataSet;
+            this.safepassdbDataSetBindingSource.Position = 0;
+            // 
+            // _safepass_dbDataSet
+            // 
+            this._safepass_dbDataSet.DataSetName = "_safepass_dbDataSet";
+            this._safepass_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MainMenu_Prototype.Properties.Resources.white_logo;
+            this.pictureBox1.Location = new System.Drawing.Point(7, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(188, 49);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold);
+            this.btnSearch.Location = new System.Drawing.Point(477, 11);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(66, 33);
+            this.btnSearch.TabIndex = 2;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // cboSearch
+            // 
+            this.cboSearch.FormattingEnabled = true;
+            this.cboSearch.Items.AddRange(new object[] {
+            "Username",
+            "Password",
+            "Service",
+            "Category",
+            "Notes",
+            "PW Strength"});
+            this.cboSearch.Location = new System.Drawing.Point(336, 18);
+            this.cboSearch.Name = "cboSearch";
+            this.cboSearch.Size = new System.Drawing.Size(121, 21);
+            this.cboSearch.TabIndex = 3;
+            // 
+            // btnReset
+            // 
+            this.btnReset.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold);
+            this.btnReset.Location = new System.Drawing.Point(550, 11);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(125, 33);
+            this.btnReset.TabIndex = 4;
+            this.btnReset.Text = "Reset User List";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
             // usernameCol
             // 
             this.usernameCol.DataPropertyName = "UserEmail";
-            this.usernameCol.HeaderText = "Username";
+            this.usernameCol.HeaderText = "User Email";
             this.usernameCol.MinimumWidth = 10;
             this.usernameCol.Name = "usernameCol";
             // 
@@ -279,16 +332,6 @@ namespace MainMenu_Prototype
             this.pwstrength.HeaderText = "PW Strength";
             this.pwstrength.Name = "pwstrength";
             // 
-            // safepassdbDataSetBindingSource
-            // 
-            this.safepassdbDataSetBindingSource.DataSource = this._safepass_dbDataSet;
-            this.safepassdbDataSetBindingSource.Position = 0;
-            // 
-            // _safepass_dbDataSet
-            // 
-            this._safepass_dbDataSet.DataSetName = "_safepass_dbDataSet";
-            this._safepass_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -302,13 +345,13 @@ namespace MainMenu_Prototype
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.leftMainPanel.ResumeLayout(false);
             this.logoPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.safepassdbDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._safepass_dbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -320,7 +363,7 @@ namespace MainMenu_Prototype
         private System.Windows.Forms.Panel logoPanel;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox searchBox;
+        private System.Windows.Forms.TextBox txtSearchBox;
         private System.Windows.Forms.Button addEntryButton;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -328,14 +371,17 @@ namespace MainMenu_Prototype
         private _safepass_dbDataSet _safepass_dbDataSet;
         private System.Windows.Forms.DataGridView dataView;
         private System.Windows.Forms.Button generatePass;
-        private System.Windows.Forms.DataGridViewTextBoxColumn usernameCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn passwordCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn serviceCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn categoryCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn noteCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pwstrength;
         private Button btnHelp;
         private Button btnResetMasterPass;
+        private Button btnSearch;
+        private Button btnReset;
+        private ComboBox cboSearch;
+        private DataGridViewTextBoxColumn usernameCol;
+        private DataGridViewTextBoxColumn passwordCol;
+        private DataGridViewTextBoxColumn serviceCol;
+        private DataGridViewTextBoxColumn categoryCol;
+        private DataGridViewTextBoxColumn noteCol;
+        private DataGridViewTextBoxColumn pwstrength;
     }
 }
 
