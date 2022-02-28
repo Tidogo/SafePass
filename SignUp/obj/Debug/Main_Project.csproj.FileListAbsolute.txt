@@ -63,3 +63,10 @@ C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\bin\Debug\Winium.Cruciatus.dl
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\bin\Debug\NLog.xml
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\bin\Debug\WindowsInput.xml
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\bin\Debug\Winium.Cruciatus.xml
+C:\Users\slick\source\repos\SafePass\SignUp\bin\Debug\NLog.dll
+C:\Users\slick\source\repos\SafePass\SignUp\bin\Debug\WindowsInput.dll
+C:\Users\slick\source\repos\SafePass\SignUp\bin\Debug\Winium.Cruciatus.dll
+C:\Users\slick\source\repos\SafePass\SignUp\bin\Debug\NLog.xml
+C:\Users\slick\source\repos\SafePass\SignUp\bin\Debug\WindowsInput.xml
+C:\Users\slick\source\repos\SafePass\SignUp\bin\Debug\Winium.Cruciatus.xml
+C:\Users\slick\source\repos\SafePass\SignUp\obj\Debug\WindowsFormsApp1.frmAuth.resources
