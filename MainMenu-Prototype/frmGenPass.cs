@@ -47,7 +47,7 @@ namespace MainMenu_Prototype
         private void button1_Click_1(object sender, EventArgs e)
         {
             new frmMain(identity).Show();
-            this.Hide();
+            this.Close();
         }
     }
 }

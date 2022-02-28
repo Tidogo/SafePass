@@ -39,12 +39,13 @@ namespace MainMenu_Prototype
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
                     connection.Open();
-                    String query = "DELETE Users WHERE UserID = @uid";
+                    String query = "DELETE FROM Users WHERE UserName = @uname";
 
                     SqlCommand command = new SqlCommand(query, connection);
-                    command.Parameters.AddWithValue("@uid", userid.Text);
+                    command.Parameters.AddWithValue("@uname", txtUserEmail.Text);
                     command.ExecuteNonQuery();
                     new frmMain(id).Show();
+                    connection.Close();
                     this.Hide();
                 }
             }
@@ -52,6 +53,11 @@ namespace MainMenu_Prototype
             {
                 Console.WriteLine(ec.ToString());
             }
+        }
+
+        private void txtUserEmail_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -156,9 +156,9 @@ namespace SafePass_Application
             this.labelUsername.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUsername.Location = new System.Drawing.Point(74, 174);
             this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(87, 21);
+            this.labelUsername.Size = new System.Drawing.Size(53, 21);
             this.labelUsername.TabIndex = 11;
-            this.labelUsername.Text = "Username";
+            this.labelUsername.Text = "Email";
             // 
             // label1
             // 

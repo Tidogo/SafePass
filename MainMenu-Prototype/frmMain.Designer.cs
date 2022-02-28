@@ -47,6 +47,7 @@ namespace MainMenu_Prototype
             this.logoPanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnHelp = new System.Windows.Forms.Button();
             this.generatePass = new System.Windows.Forms.Button();
             this.addEntryButton = new System.Windows.Forms.Button();
             this.searchBox = new System.Windows.Forms.TextBox();
@@ -61,6 +62,7 @@ namespace MainMenu_Prototype
             this.pwstrength = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.safepassdbDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this._safepass_dbDataSet = new MainMenu_Prototype._safepass_dbDataSet();
+            this.btnResetMasterPass = new System.Windows.Forms.Button();
             this.leftMainPanel.SuspendLayout();
             this.tagPanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
@@ -81,7 +83,7 @@ namespace MainMenu_Prototype
             this.leftMainPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.leftMainPanel.Location = new System.Drawing.Point(0, 0);
             this.leftMainPanel.Name = "leftMainPanel";
-            this.leftMainPanel.Size = new System.Drawing.Size(200, 450);
+            this.leftMainPanel.Size = new System.Drawing.Size(200, 555);
             this.leftMainPanel.TabIndex = 0;
             // 
             // tagPanel
@@ -237,6 +239,8 @@ namespace MainMenu_Prototype
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnResetMasterPass);
+            this.panel1.Controls.Add(this.btnHelp);
             this.panel1.Controls.Add(this.generatePass);
             this.panel1.Controls.Add(this.addEntryButton);
             this.panel1.Controls.Add(this.searchBox);
@@ -244,13 +248,24 @@ namespace MainMenu_Prototype
             this.panel1.Location = new System.Drawing.Point(200, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(600, 52);
+            this.panel1.Size = new System.Drawing.Size(850, 52);
             this.panel1.TabIndex = 1;
+            // 
+            // btnHelp
+            // 
+            this.btnHelp.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold);
+            this.btnHelp.Location = new System.Drawing.Point(688, 0);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(83, 52);
+            this.btnHelp.TabIndex = 3;
+            this.btnHelp.Text = "Help";
+            this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // generatePass
             // 
             this.generatePass.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold);
-            this.generatePass.Location = new System.Drawing.Point(438, 0);
+            this.generatePass.Location = new System.Drawing.Point(599, 0);
             this.generatePass.Name = "generatePass";
             this.generatePass.Size = new System.Drawing.Size(83, 52);
             this.generatePass.TabIndex = 2;
@@ -263,7 +278,7 @@ namespace MainMenu_Prototype
             this.addEntryButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.addEntryButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.addEntryButton.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addEntryButton.Location = new System.Drawing.Point(526, 0);
+            this.addEntryButton.Location = new System.Drawing.Point(776, 0);
             this.addEntryButton.Margin = new System.Windows.Forms.Padding(2);
             this.addEntryButton.Name = "addEntryButton";
             this.addEntryButton.Size = new System.Drawing.Size(74, 52);
@@ -299,7 +314,7 @@ namespace MainMenu_Prototype
             this.panel2.Location = new System.Drawing.Point(200, 52);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(600, 398);
+            this.panel2.Size = new System.Drawing.Size(850, 398);
             this.panel2.TabIndex = 2;
             // 
             // dataView
@@ -336,7 +351,7 @@ namespace MainMenu_Prototype
             this.dataView.RowHeadersWidth = 198;
             this.dataView.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.dataView.RowTemplate.Height = 33;
-            this.dataView.Size = new System.Drawing.Size(600, 398);
+            this.dataView.Size = new System.Drawing.Size(850, 398);
             this.dataView.TabIndex = 0;
             this.dataView.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataView_CellValueChanged);
             // 
@@ -361,14 +376,14 @@ namespace MainMenu_Prototype
             this.serviceCol.MinimumWidth = 10;
             this.serviceCol.Name = "serviceCol";
             // 
-            // safepassdbDataSetBindingSource
+            // categoryCol
             // 
             this.categoryCol.DataPropertyName = "Category";
             this.categoryCol.HeaderText = "Category";
             this.categoryCol.MinimumWidth = 10;
             this.categoryCol.Name = "categoryCol";
             // 
-            // _safepass_dbDataSet
+            // noteCol
             // 
             this.noteCol.DataPropertyName = "Notes";
             this.noteCol.HeaderText = "Notes";
@@ -391,11 +406,22 @@ namespace MainMenu_Prototype
             this._safepass_dbDataSet.DataSetName = "_safepass_dbDataSet";
             this._safepass_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // btnResetMasterPass
+            // 
+            this.btnResetMasterPass.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold);
+            this.btnResetMasterPass.Location = new System.Drawing.Point(475, 0);
+            this.btnResetMasterPass.Name = "btnResetMasterPass";
+            this.btnResetMasterPass.Size = new System.Drawing.Size(118, 52);
+            this.btnResetMasterPass.TabIndex = 4;
+            this.btnResetMasterPass.Text = "Reset Master Pass";
+            this.btnResetMasterPass.UseVisualStyleBackColor = true;
+            this.btnResetMasterPass.Click += new System.EventHandler(this.btnResetMasterPass_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1050, 555);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.leftMainPanel);
@@ -445,6 +471,8 @@ namespace MainMenu_Prototype
         private System.Windows.Forms.DataGridViewTextBoxColumn categoryCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn noteCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn pwstrength;
+        private Button btnHelp;
+        private Button btnResetMasterPass;
     }
 }
 

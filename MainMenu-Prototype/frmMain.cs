@@ -19,7 +19,6 @@ namespace MainMenu_Prototype
     {
         // account id stored in this public variable
         public int id = 0;
-
         // Make the form to use the entered credentials to show only their own data
         public frmMain(int loginid)
         {
@@ -67,13 +66,14 @@ namespace MainMenu_Prototype
             using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
             {
                 String query = "SELECT UserEmail,UserPW,Category, ServiceURL, Notes FROM Users WHERE AccountID LIKE @acID";
-            connection.Open();
+                connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@acID",SqlDbType.VarChar);
                 command.Parameters["@acID"].Value = id;
 
                 SqlDataReader reader = command.ExecuteReader();
                 dtTable.Load(reader);
+                connection.Close();
         }
             return dtTable;
 
@@ -101,6 +101,7 @@ namespace MainMenu_Prototype
             sda.Fill(dt);
 
             dataView.DataSource = dt;
+            connection.Close();
         }
 
         private void generatePass_Click(object sender, EventArgs e)
@@ -141,7 +142,12 @@ namespace MainMenu_Prototype
 
                         
                             command.ExecuteNonQuery();
+<<<<<<< HEAD
                         
+=======
+                            connection.Close();
+                        }
+>>>>>>> 5888bf802b73d83aa0288af9cbe6aa2ed5e03873
                     }
                 }
                 catch (SqlException ec)
@@ -151,5 +157,16 @@ namespace MainMenu_Prototype
             }
         }
 
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            new frmHelp(id).Show();
+            this.Hide();
+        }
+
+        private void btnResetMasterPass_Click(object sender, EventArgs e)
+        {
+            new frmResetMasterPass(id).Show();
+            this.Hide();
+        }
     }
 }
