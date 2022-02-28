@@ -39,5 +39,23 @@ namespace MainMenu_Prototype
             new frmMain(identity).Show();
             this.Hide();
         }
+
+        private void help_goToEdit_Click(object sender, EventArgs e)
+        {
+            new frmPassAdd(identity).Show();
+            this.Hide();
+        }
+
+        private void help_goToGenPass_Click(object sender, EventArgs e)
+        {
+            new frmGenPass(identity).Show();
+            this.Hide();
+        }
+
+        private void help_goToResMasPass_Click(object sender, EventArgs e)
+        {
+            new frmResetMasterPass(identity).Show();
+            this.Hide();
+        }
     }
 }

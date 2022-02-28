@@ -45,6 +45,10 @@
             this.button2 = new System.Windows.Forms.Button();
             this.userid = new System.Windows.Forms.TextBox();
             this.btnBack = new System.Windows.Forms.Button();
+            this.logoPanel = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.logoPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // txtUserEmail
@@ -202,11 +206,31 @@
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // logoPanel
+            // 
+            this.logoPanel.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.logoPanel.Controls.Add(this.pictureBox2);
+            this.logoPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.logoPanel.Location = new System.Drawing.Point(0, 0);
+            this.logoPanel.Name = "logoPanel";
+            this.logoPanel.Size = new System.Drawing.Size(800, 50);
+            this.logoPanel.TabIndex = 17;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::MainMenu_Prototype.Properties.Resources.white_logo;
+            this.pictureBox2.Location = new System.Drawing.Point(7, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(188, 49);
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // frmPassAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.logoPanel);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.userid);
             this.Controls.Add(this.button2);
@@ -226,6 +250,8 @@
             this.Controls.Add(this.txtUserEmail);
             this.Name = "frmPassAdd";
             this.Text = "Form2";
+            this.logoPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -250,5 +276,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox userid;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Panel logoPanel;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
