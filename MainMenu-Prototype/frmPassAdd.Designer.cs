@@ -43,7 +43,6 @@
             this.addUser = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.userid = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtUserEmail
@@ -198,20 +197,11 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // userid
-            // 
-            this.userid.Location = new System.Drawing.Point(536, 453);
-            this.userid.Margin = new System.Windows.Forms.Padding(6);
-            this.userid.Name = "userid";
-            this.userid.Size = new System.Drawing.Size(248, 31);
-            this.userid.TabIndex = 15;
-            // 
             // frmPassAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1600, 865);
-            this.Controls.Add(this.userid);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.addUser);
@@ -252,6 +242,5 @@
         private System.Windows.Forms.Button addUser;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox userid;
     }
 }

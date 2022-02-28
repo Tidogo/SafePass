@@ -125,8 +125,6 @@ namespace MainMenu_Prototype
                     // code for generating sql query to insert new account into database
                     using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                     {
-                        if (id == 0)
-                        {
                             connection.Open();
 
                             DataGridViewRow curRow = dataView.CurrentRow;
@@ -143,7 +141,7 @@ namespace MainMenu_Prototype
 
                         
                             command.ExecuteNonQuery();
-                        }
+                        
                     }
                 }
                 catch (SqlException ec)
