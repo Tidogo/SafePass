@@ -142,12 +142,12 @@ namespace MainMenu_Prototype
 
                         
                             command.ExecuteNonQuery();
-<<<<<<< HEAD
+                        //<<<<<<< HEAD
+
+                        //=======
+                        //>>>>>>> 5888bf802b73d83aa0288af9cbe6aa2ed5e03873
+                        connection.Close();
                         
-=======
-                            connection.Close();
-                        }
->>>>>>> 5888bf802b73d83aa0288af9cbe6aa2ed5e03873
                     }
                 }
                 catch (SqlException ec)
