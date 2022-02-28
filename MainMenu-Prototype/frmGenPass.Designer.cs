@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGenPass));
             this.triggerPassGen = new System.Windows.Forms.Button();
             this.passLength = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
@@ -146,6 +147,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.passLength);
             this.Controls.Add(this.triggerPassGen);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmGenPass";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.passLength)).EndInit();

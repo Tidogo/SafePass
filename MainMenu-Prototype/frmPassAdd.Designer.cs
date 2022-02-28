@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPassAdd));
             this.txtUserEmail = new System.Windows.Forms.TextBox();
             this.txtUserPW = new System.Windows.Forms.TextBox();
             this.txtCategory = new System.Windows.Forms.TextBox();
@@ -248,6 +249,7 @@
             this.Controls.Add(this.txtCategory);
             this.Controls.Add(this.txtUserPW);
             this.Controls.Add(this.txtUserEmail);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPassAdd";
             this.Text = "Form2";
             this.logoPanel.ResumeLayout(false);

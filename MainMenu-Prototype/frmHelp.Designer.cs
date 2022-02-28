@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHelp));
             this.btn_OpenEmail = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.logoPanel = new System.Windows.Forms.Panel();
@@ -295,6 +296,7 @@
             this.Controls.Add(this.logoPanel);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btn_OpenEmail);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmHelp";
             this.Text = "frmHelp";
             this.logoPanel.ResumeLayout(false);
