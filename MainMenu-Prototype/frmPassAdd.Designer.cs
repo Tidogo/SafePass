@@ -286,12 +286,12 @@
         private System.Windows.Forms.Button addUser;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-<<<<<<< HEAD
-=======
+//<<<<<<< HEAD
+//=======
         private System.Windows.Forms.TextBox userid;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Panel logoPanel;
         private System.Windows.Forms.PictureBox pictureBox2;
->>>>>>> 5888bf802b73d83aa0288af9cbe6aa2ed5e03873
+//>>>>>>> 5888bf802b73d83aa0288af9cbe6aa2ed5e03873
     }
 }
