@@ -44,12 +44,15 @@
             this.addUser = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+<<<<<<< HEAD
+=======
             this.userid = new System.Windows.Forms.TextBox();
             this.btnBack = new System.Windows.Forms.Button();
             this.logoPanel = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.logoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+>>>>>>> 5888bf802b73d83aa0288af9cbe6aa2ed5e03873
             this.SuspendLayout();
             // 
             // txtUserEmail
@@ -189,6 +192,8 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+<<<<<<< HEAD
+=======
             // userid
             // 
             this.userid.Location = new System.Drawing.Point(268, 236);
@@ -226,14 +231,19 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
+>>>>>>> 5888bf802b73d83aa0288af9cbe6aa2ed5e03873
             // frmPassAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
+            this.ClientSize = new System.Drawing.Size(1600, 865);
+=======
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.logoPanel);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.userid);
+>>>>>>> 5888bf802b73d83aa0288af9cbe6aa2ed5e03873
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.addUser);
@@ -276,9 +286,12 @@
         private System.Windows.Forms.Button addUser;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+//<<<<<<< HEAD
+//=======
         private System.Windows.Forms.TextBox userid;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Panel logoPanel;
         private System.Windows.Forms.PictureBox pictureBox2;
+//>>>>>>> 5888bf802b73d83aa0288af9cbe6aa2ed5e03873
     }
 }
