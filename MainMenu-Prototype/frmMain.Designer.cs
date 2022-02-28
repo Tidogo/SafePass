@@ -31,22 +31,14 @@ namespace MainMenu_Prototype
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.leftMainPanel = new System.Windows.Forms.Panel();
-            this.tagPanel = new System.Windows.Forms.Panel();
-            this.addTagButton = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.subTagButton1 = new System.Windows.Forms.Button();
-            this.tagButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.logoPanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnResetMasterPass = new System.Windows.Forms.Button();
             this.btnHelp = new System.Windows.Forms.Button();
             this.generatePass = new System.Windows.Forms.Button();
             this.addEntryButton = new System.Windows.Forms.Button();
@@ -62,9 +54,7 @@ namespace MainMenu_Prototype
             this.pwstrength = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.safepassdbDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this._safepass_dbDataSet = new MainMenu_Prototype._safepass_dbDataSet();
-            this.btnResetMasterPass = new System.Windows.Forms.Button();
             this.leftMainPanel.SuspendLayout();
-            this.tagPanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -77,131 +67,16 @@ namespace MainMenu_Prototype
             // leftMainPanel
             // 
             this.leftMainPanel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.leftMainPanel.Controls.Add(this.tagPanel);
+            this.leftMainPanel.Controls.Add(this.btnHelp);
+            this.leftMainPanel.Controls.Add(this.btnResetMasterPass);
+            this.leftMainPanel.Controls.Add(this.generatePass);
             this.leftMainPanel.Controls.Add(this.button1);
             this.leftMainPanel.Controls.Add(this.logoPanel);
             this.leftMainPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.leftMainPanel.Location = new System.Drawing.Point(0, 0);
             this.leftMainPanel.Name = "leftMainPanel";
-            this.leftMainPanel.Size = new System.Drawing.Size(200, 555);
+            this.leftMainPanel.Size = new System.Drawing.Size(195, 555);
             this.leftMainPanel.TabIndex = 0;
-            // 
-            // tagPanel
-            // 
-            this.tagPanel.BackColor = System.Drawing.Color.Transparent;
-            this.tagPanel.Controls.Add(this.addTagButton);
-            this.tagPanel.Controls.Add(this.button5);
-            this.tagPanel.Controls.Add(this.button4);
-            this.tagPanel.Controls.Add(this.button3);
-            this.tagPanel.Controls.Add(this.button2);
-            this.tagPanel.Controls.Add(this.subTagButton1);
-            this.tagPanel.Controls.Add(this.tagButton);
-            this.tagPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tagPanel.Location = new System.Drawing.Point(0, 91);
-            this.tagPanel.Name = "tagPanel";
-            this.tagPanel.Size = new System.Drawing.Size(200, 244);
-            this.tagPanel.TabIndex = 2;
-            // 
-            // addTagButton
-            // 
-            this.addTagButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.addTagButton.FlatAppearance.BorderSize = 0;
-            this.addTagButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addTagButton.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addTagButton.Image = ((System.Drawing.Image)(resources.GetObject("addTagButton.Image")));
-            this.addTagButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.addTagButton.Location = new System.Drawing.Point(0, 205);
-            this.addTagButton.Name = "addTagButton";
-            this.addTagButton.Padding = new System.Windows.Forms.Padding(25, 0, 20, 0);
-            this.addTagButton.Size = new System.Drawing.Size(200, 39);
-            this.addTagButton.TabIndex = 6;
-            this.addTagButton.Text = "Add Tag";
-            this.addTagButton.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Gainsboro;
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(0, 170);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(200, 35);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Category2";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Gainsboro;
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(0, 135);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(200, 35);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Favorite";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Gainsboro;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(0, 100);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(200, 35);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Shopping";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Gainsboro;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(0, 65);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 35);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Social";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // subTagButton1
-            // 
-            this.subTagButton1.BackColor = System.Drawing.Color.Gainsboro;
-            this.subTagButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.subTagButton1.FlatAppearance.BorderSize = 0;
-            this.subTagButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.subTagButton1.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subTagButton1.Location = new System.Drawing.Point(0, 30);
-            this.subTagButton1.Name = "subTagButton1";
-            this.subTagButton1.Size = new System.Drawing.Size(200, 35);
-            this.subTagButton1.TabIndex = 1;
-            this.subTagButton1.Text = "Email";
-            this.subTagButton1.UseVisualStyleBackColor = false;
-            // 
-            // tagButton
-            // 
-            this.tagButton.BackColor = System.Drawing.Color.Transparent;
-            this.tagButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tagButton.FlatAppearance.BorderSize = 0;
-            this.tagButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tagButton.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tagButton.Location = new System.Drawing.Point(0, 0);
-            this.tagButton.Name = "tagButton";
-            this.tagButton.Size = new System.Drawing.Size(200, 30);
-            this.tagButton.TabIndex = 0;
-            this.tagButton.Text = "Categories";
-            this.tagButton.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.tagButton.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
@@ -212,7 +87,7 @@ namespace MainMenu_Prototype
             this.button1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold);
             this.button1.Location = new System.Drawing.Point(0, 50);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 41);
+            this.button1.Size = new System.Drawing.Size(195, 41);
             this.button1.TabIndex = 1;
             this.button1.Text = "My Vault";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -225,7 +100,7 @@ namespace MainMenu_Prototype
             this.logoPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.logoPanel.Location = new System.Drawing.Point(0, 0);
             this.logoPanel.Name = "logoPanel";
-            this.logoPanel.Size = new System.Drawing.Size(200, 50);
+            this.logoPanel.Size = new System.Drawing.Size(195, 50);
             this.logoPanel.TabIndex = 0;
             // 
             // pictureBox1
@@ -239,24 +114,32 @@ namespace MainMenu_Prototype
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnResetMasterPass);
-            this.panel1.Controls.Add(this.btnHelp);
-            this.panel1.Controls.Add(this.generatePass);
             this.panel1.Controls.Add(this.addEntryButton);
             this.panel1.Controls.Add(this.searchBox);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(200, 0);
+            this.panel1.Location = new System.Drawing.Point(195, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(850, 52);
+            this.panel1.Size = new System.Drawing.Size(855, 52);
             this.panel1.TabIndex = 1;
+            // 
+            // btnResetMasterPass
+            // 
+            this.btnResetMasterPass.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold);
+            this.btnResetMasterPass.Location = new System.Drawing.Point(12, 110);
+            this.btnResetMasterPass.Name = "btnResetMasterPass";
+            this.btnResetMasterPass.Size = new System.Drawing.Size(118, 52);
+            this.btnResetMasterPass.TabIndex = 4;
+            this.btnResetMasterPass.Text = "Reset Master Pass";
+            this.btnResetMasterPass.UseVisualStyleBackColor = true;
+            this.btnResetMasterPass.Click += new System.EventHandler(this.btnResetMasterPass_Click);
             // 
             // btnHelp
             // 
             this.btnHelp.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold);
-            this.btnHelp.Location = new System.Drawing.Point(688, 0);
+            this.btnHelp.Location = new System.Drawing.Point(12, 226);
             this.btnHelp.Name = "btnHelp";
-            this.btnHelp.Size = new System.Drawing.Size(83, 52);
+            this.btnHelp.Size = new System.Drawing.Size(118, 52);
             this.btnHelp.TabIndex = 3;
             this.btnHelp.Text = "Help";
             this.btnHelp.UseVisualStyleBackColor = true;
@@ -265,9 +148,9 @@ namespace MainMenu_Prototype
             // generatePass
             // 
             this.generatePass.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold);
-            this.generatePass.Location = new System.Drawing.Point(599, 0);
+            this.generatePass.Location = new System.Drawing.Point(12, 168);
             this.generatePass.Name = "generatePass";
-            this.generatePass.Size = new System.Drawing.Size(83, 52);
+            this.generatePass.Size = new System.Drawing.Size(118, 52);
             this.generatePass.TabIndex = 2;
             this.generatePass.Text = "Generate Password";
             this.generatePass.UseVisualStyleBackColor = true;
@@ -278,7 +161,7 @@ namespace MainMenu_Prototype
             this.addEntryButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.addEntryButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.addEntryButton.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addEntryButton.Location = new System.Drawing.Point(776, 0);
+            this.addEntryButton.Location = new System.Drawing.Point(781, 0);
             this.addEntryButton.Margin = new System.Windows.Forms.Padding(2);
             this.addEntryButton.Name = "addEntryButton";
             this.addEntryButton.Size = new System.Drawing.Size(74, 52);
@@ -311,10 +194,10 @@ namespace MainMenu_Prototype
             // 
             this.panel2.Controls.Add(this.dataView);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(200, 52);
+            this.panel2.Location = new System.Drawing.Point(195, 52);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(850, 398);
+            this.panel2.Size = new System.Drawing.Size(855, 398);
             this.panel2.TabIndex = 2;
             // 
             // dataView
@@ -351,7 +234,7 @@ namespace MainMenu_Prototype
             this.dataView.RowHeadersWidth = 198;
             this.dataView.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.dataView.RowTemplate.Height = 33;
-            this.dataView.Size = new System.Drawing.Size(850, 398);
+            this.dataView.Size = new System.Drawing.Size(855, 503);
             this.dataView.TabIndex = 0;
             this.dataView.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataView_CellValueChanged);
             // 
@@ -406,17 +289,6 @@ namespace MainMenu_Prototype
             this._safepass_dbDataSet.DataSetName = "_safepass_dbDataSet";
             this._safepass_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // btnResetMasterPass
-            // 
-            this.btnResetMasterPass.Font = new System.Drawing.Font("Nirmala UI", 10.125F, System.Drawing.FontStyle.Bold);
-            this.btnResetMasterPass.Location = new System.Drawing.Point(475, 0);
-            this.btnResetMasterPass.Name = "btnResetMasterPass";
-            this.btnResetMasterPass.Size = new System.Drawing.Size(118, 52);
-            this.btnResetMasterPass.TabIndex = 4;
-            this.btnResetMasterPass.Text = "Reset Master Pass";
-            this.btnResetMasterPass.UseVisualStyleBackColor = true;
-            this.btnResetMasterPass.Click += new System.EventHandler(this.btnResetMasterPass_Click);
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -429,7 +301,6 @@ namespace MainMenu_Prototype
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.leftMainPanel.ResumeLayout(false);
-            this.tagPanel.ResumeLayout(false);
             this.logoPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -447,14 +318,6 @@ namespace MainMenu_Prototype
         private System.Windows.Forms.Panel leftMainPanel;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel logoPanel;
-        private System.Windows.Forms.Panel tagPanel;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button subTagButton1;
-        private System.Windows.Forms.Button tagButton;
-        private System.Windows.Forms.Button addTagButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox searchBox;
