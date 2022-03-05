@@ -6236,23 +6236,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jedik\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\UnitTesting\\UnitTesting.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\SafePass10\\UnitTesting\\UnitTesting.csproj",
       "projectName": "UnitTesting",
-      "projectPath": "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\UnitTesting\\UnitTesting.csproj",
-      "packagesPath": "C:\\Users\\jedik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\UnitTesting\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\source\\repos\\SafePass10\\UnitTesting\\UnitTesting.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\source\\repos\\SafePass10\\UnitTesting\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\jedik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6266,8 +6267,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\SignUp\\Main_Project.csproj": {
-              "projectPath": "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\SignUp\\Main_Project.csproj"
+            "C:\\Users\\Admin\\source\\repos\\SafePass10\\SignUp\\Main_Project.csproj": {
+              "projectPath": "C:\\Users\\Admin\\source\\repos\\SafePass10\\SignUp\\Main_Project.csproj"
             }
           }
         }
