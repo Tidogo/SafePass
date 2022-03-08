@@ -47,12 +47,12 @@ namespace MainMenu_Prototype
             this.Hide();
         }
 
-
+        
         private void dataView_Load(object sender, EventArgs e)
         {
             dataView.DataSource = GetUserList();
         }
-
+        
         private DataTable GetUserList()
         {
             DataTable dtTable = new DataTable();
@@ -65,7 +65,7 @@ namespace MainMenu_Prototype
 
             using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
             {
-                String query = "SELECT UserEmail,UserPW,Category, ServiceURL, Notes FROM Users WHERE AccountID LIKE @acID";
+                String query = "SELECT UserEmail,UserPW,ServiceName,Category,Notes, UserPWSTR FROM Users WHERE AccountID LIKE @acID";
                 connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@acID",SqlDbType.VarChar);
@@ -78,7 +78,8 @@ namespace MainMenu_Prototype
             return dtTable;
 
         }
-
+        
+        
         private void frmMain_Load(object sender, EventArgs e)
         {
             bindData();
@@ -103,6 +104,7 @@ namespace MainMenu_Prototype
             dataView.DataSource = dt;
             connection.Close();
         }
+        
 
         private void generatePass_Click(object sender, EventArgs e)
         {

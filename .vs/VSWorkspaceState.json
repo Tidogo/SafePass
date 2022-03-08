@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\MainMenu-Prototype",
+    "\\MainMenu-Prototype\\Resources",
+    "\\SignUp"
   ],
-  "SelectedNode": "\\SafePass_Application.sln",
+  "SelectedNode": "\\MainMenu-Prototype\\frmHelp.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -2,7 +2,6 @@ C:\Users\tdatt\source\repos\password-manager-prototype\MainMenu-Prototype\bin\De
 C:\Users\tdatt\source\repos\password-manager-prototype\MainMenu-Prototype\bin\Debug\MainMenu-Prototype.exe
 C:\Users\tdatt\source\repos\password-manager-prototype\MainMenu-Prototype\bin\Debug\MainMenu-Prototype.pdb
 C:\Users\tdatt\source\repos\password-manager-prototype\MainMenu-Prototype\obj\Debug\MainMenu-Prototype.csproj.AssemblyReference.cache
-C:\Users\tdatt\source\repos\password-manager-prototype\MainMenu-Prototype\obj\Debug\MainMenu_Prototype.Form1.resources
 C:\Users\tdatt\source\repos\password-manager-prototype\MainMenu-Prototype\obj\Debug\MainMenu_Prototype.Properties.Resources.resources
 C:\Users\tdatt\source\repos\password-manager-prototype\MainMenu-Prototype\obj\Debug\MainMenu-Prototype.csproj.GenerateResource.cache
 C:\Users\tdatt\source\repos\password-manager-prototype\MainMenu-Prototype\obj\Debug\MainMenu-Prototype.csproj.CoreCompileInputs.cache
@@ -18,10 +17,6 @@ C:\Users\slick\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\MainMen
 C:\Users\slick\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\MainMenu-Prototype.csproj.CoreCompileInputs.cache
 C:\Users\slick\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\MainMenu-Prototype.exe
 C:\Users\slick\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\MainMenu-Prototype.pdb
-C:\Users\tdatt\source\repos\password-manager-prototype\MainMenu-Prototype\bin\Debug\System.Management.Automation.dll
-C:\Users\tdatt\source\repos\password-manager-prototype\MainMenu-Prototype\bin\Debug\Microsoft.Management.Infrastructure.dll
-C:\Users\tdatt\source\repos\password-manager-prototype\MainMenu-Prototype\bin\Debug\System.Management.Automation.xml
-C:\Users\tdatt\source\repos\password-manager-prototype\MainMenu-Prototype\obj\Debug\MainMenu-Prototype.csproj.CopyComplete
 C:\Users\slick\Source\Repos\SafePass\MainMenu-Prototype\bin\Debug\MainMenu-Prototype.exe.config
 C:\Users\slick\Source\Repos\SafePass\MainMenu-Prototype\bin\Debug\MainMenu-Prototype.exe
 C:\Users\slick\Source\Repos\SafePass\MainMenu-Prototype\bin\Debug\MainMenu-Prototype.pdb
@@ -70,3 +65,10 @@ C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\MainMen
 C:\Users\Admin\source\repos\SafePass10\MainMenu-Prototype\obj\Debug\MainMenu_Prototype.frmHelp.resources
 C:\Users\Admin\source\repos\SafePass10\MainMenu-Prototype\obj\Debug\MainMenu_Prototype.frmResetMasterPass.resources
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\MainMenu-Prototype.csproj.AssemblyReference.cache
+C:\Users\tdatt\source\repos\password-manager-prototype\MainMenu-Prototype\obj\Debug\MainMenu_Prototype.frmGenPass.resources
+C:\Users\tdatt\source\repos\password-manager-prototype\MainMenu-Prototype\obj\Debug\MainMenu_Prototype.frmHelp.resources
+C:\Users\tdatt\source\repos\password-manager-prototype\MainMenu-Prototype\obj\Debug\MainMenu_Prototype.frmMain.resources
+C:\Users\tdatt\source\repos\password-manager-prototype\MainMenu-Prototype\obj\Debug\MainMenu_Prototype.frmPassAdd.resources
+C:\Users\tdatt\source\repos\password-manager-prototype\MainMenu-Prototype\obj\Debug\MainMenu_Prototype.frmPassDelete.resources
+C:\Users\tdatt\source\repos\password-manager-prototype\MainMenu-Prototype\obj\Debug\MainMenu_Prototype.frmPassUpdate.resources
+C:\Users\tdatt\source\repos\password-manager-prototype\MainMenu-Prototype\obj\Debug\MainMenu_Prototype.frmResetMasterPass.resources
