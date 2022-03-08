@@ -57,5 +57,10 @@ namespace MainMenu_Prototype
             new frmResetMasterPass(identity).Show();
             this.Hide();
         }
+
+        private void tutorialLink_Button(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=8a_cVLicRa8");
+        }
     }
 }

@@ -39,7 +39,7 @@ namespace MainMenu_Prototype
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
                     connection.Open();
-                    String query = "DELETE FROM Users WHERE UserName = @uname";
+                    String query = "DELETE FROM Users WHERE UserEmail = @uname";
 
                     SqlCommand command = new SqlCommand(query, connection);
                     command.Parameters.AddWithValue("@uname", txtUserEmail.Text);
