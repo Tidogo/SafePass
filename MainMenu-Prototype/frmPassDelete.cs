@@ -59,5 +59,11 @@ namespace MainMenu_Prototype
         {
 
         }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            new frmPassAdd(id).Show();
+            this.Hide();
+        }
     }
 }
