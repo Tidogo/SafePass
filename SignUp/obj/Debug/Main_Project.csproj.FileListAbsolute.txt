@@ -48,7 +48,6 @@ C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\bin\Debug\MainMenu-Prototype.
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\bin\Debug\MainMenu-Prototype.exe.config
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\Main_Project.csproj.AssemblyReference.cache
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\Main_Project.csproj.SuggestedBindingRedirects.cache
-C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\WindowsFormsApp1.frmAuth.resources
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\SafePass_Application.frmLogin.resources
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\SafePass_Application.frmRegister.resources
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
@@ -92,3 +91,4 @@ C:\Users\tdatt\source\repos\password-manager-prototype\SignUp\obj\Debug\Main_Pro
 C:\Users\tdatt\source\repos\password-manager-prototype\SignUp\obj\Debug\Main_Project.csproj.CopyComplete
 C:\Users\tdatt\source\repos\password-manager-prototype\SignUp\obj\Debug\WindowsFormsApp1.exe
 C:\Users\tdatt\source\repos\password-manager-prototype\SignUp\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\LoginRegister.frmAuth.resources

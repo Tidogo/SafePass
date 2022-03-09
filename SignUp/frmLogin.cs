@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using MainMenu_Prototype;
-using WindowsFormsApp1;
+using LoginRegister;
 
 namespace SafePass_Application
 {

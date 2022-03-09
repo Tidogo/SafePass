@@ -11,7 +11,7 @@ using System.Net;
 using System.Net.Mail;
 using MainMenu_Prototype;
 
-namespace WindowsFormsApp1
+namespace LoginRegister
 {
     public partial class frmAuth : Form
     {

@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace LoginRegister
 {
     partial class frmAuth
     {
@@ -122,7 +122,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.white_logo;
+            this.pictureBox1.Image = global::LoginRegister.Properties.Resources.white_logo;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(188, 49);
@@ -131,7 +131,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.white_logo_w_blue_lock_lighter;
+            this.pictureBox2.Image = global::LoginRegister.Properties.Resources.white_logo_w_blue_lock_lighter;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(188, 49);
