@@ -199,7 +199,8 @@ namespace SafePass_Application
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::LoginRegister.Properties.Resources.white_logo_w_blue_lock_lighter;
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-2, 17);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(388, 50);
