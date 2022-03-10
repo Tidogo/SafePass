@@ -79,3 +79,14 @@ C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\bin\Debug\NLog.xm
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\bin\Debug\WindowsInput.xml
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\bin\Debug\Winium.Cruciatus.xml
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\MainMenu-Prototype.csproj.CopyComplete
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\bin\Debug\System.Management.Automation.dll
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\bin\Debug\Microsoft.Management.Infrastructure.dll
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\bin\Debug\Microsoft.Management.Infrastructure.Native.dll
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\bin\Debug\System.Management.Automation.xml
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\Interop.Shell32.dll
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\Interop.UIA.dll
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\Interop.UIAutomationBlockingCoreLib.dll
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\Interop.UIAutomationClient.dll
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\Interop.UIAutomationCrossBitnessHookLib.dll
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\Interop.WSManAutomation.dll
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\MainMenu-Prototype\obj\Debug\MainMenu-Prototype.csproj.ResolveComReference.cache

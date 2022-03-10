@@ -92,3 +92,10 @@ C:\Users\tdatt\source\repos\password-manager-prototype\SignUp\obj\Debug\Main_Pro
 C:\Users\tdatt\source\repos\password-manager-prototype\SignUp\obj\Debug\WindowsFormsApp1.exe
 C:\Users\tdatt\source\repos\password-manager-prototype\SignUp\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\LoginRegister.frmAuth.resources
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\Interop.Shell32.dll
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\Interop.UIA.dll
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\Interop.UIAutomationBlockingCoreLib.dll
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\Interop.UIAutomationClient.dll
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\Interop.UIAutomationCrossBitnessHookLib.dll
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\Interop.WSManAutomation.dll
+C:\Users\jedik\Source\Repos\Tidogo\SafePass\SignUp\obj\Debug\Main_Project.csproj.ResolveComReference.cache

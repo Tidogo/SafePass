@@ -20,7 +20,12 @@
       "ProjectGuid": "41308960-5645-4dcd-a8ec-3189deed241c",
       "DisplayName": "UnitTesting",
       "ColorIndex": 2
+    },
+    "509cf8da-0a28-41a3-865d-ece1aa8bc27b": {
+      "ProjectGuid": "509cf8da-0a28-41a3-865d-ece1aa8bc27b",
+      "DisplayName": "SafePass.Tests",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }
