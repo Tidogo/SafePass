@@ -11,7 +11,7 @@ namespace AutoTests
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void AccTest1()
         {
 
             // for tests, you need to put your computer's file path for debug exe for the application.launch method
@@ -29,5 +29,90 @@ namespace AutoTests
             mainWindow.FindFirstDescendant(cf.ByAutomationId("txtPassword")).AsTextBox().Enter("1234567890");
             mainWindow.FindFirstDescendant(cf.ByName("LOG IN")).AsButton().Click();
         }
+
+        [TestMethod]
+        public void AccTest2()
+        {
+            var application = Application.Launch(@"C:\Users\jedik\source\repos\Tidogo\SafePass\SignUp\bin\Debug\Main_Project.exe");
+            var mainWindow = application.GetMainWindow(new UIA3Automation());
+            ConditionFactory cf = new ConditionFactory(new UIA3PropertyLibrary());
+            mainWindow.FindFirstDescendant(cf.ByAutomationId("pressCreateAcc")).AsLabel().Click();
+        }
+
+        [TestMethod]
+        public void AccTest3()
+        {
+            var application = Application.Launch(@"C:\Users\jedik\source\repos\Tidogo\SafePass\SignUp\bin\Debug\Main_Project.exe");
+            var mainWindow = application.GetMainWindow(new UIA3Automation());
+            ConditionFactory cf = new ConditionFactory(new UIA3PropertyLibrary());
+            mainWindow.FindFirstDescendant(cf.ByAutomationId("pressCreateAcc")).AsLabel().Click();
+            var subWindow = application.GetMainWindow(new UIA3Automation());
+            subWindow.FindFirstDescendant(cf.ByAutomationId("txtEmail")).AsTextBox().Enter("][p234c@gmail.com");
+            subWindow.FindFirstDescendant(cf.ByAutomationId("txtPassword")).AsTextBox().Enter("][p234c@gmail.com");
+            subWindow.FindFirstDescendant(cf.ByAutomationId("txtConfPassword")).AsTextBox().Enter("][p234c@gmail.com");
+            subWindow.FindFirstDescendant(cf.ByName("SIGN UP")).AsButton().Click();
+        }
+
+        [TestMethod]
+        public void AccTest4()
+        {
+            var application = Application.Launch(@"C:\Users\jedik\source\repos\Tidogo\SafePass\SignUp\bin\Debug\MainMenu-Prototype.exe");
+            var mainWindow = application.GetMainWindow(new UIA3Automation());
+            ConditionFactory cf = new ConditionFactory(new UIA3PropertyLibrary());
+            mainWindow.FindFirstDescendant(cf.ByName("Generate Password")).AsButton().Click();
+            var subWindow = application.GetMainWindow(new UIA3Automation());
+            subWindow.FindFirstDescendant(cf.ByName("Create Password")).AsButton().Click();
+            subWindow.FindFirstDescendant(cf.ByName("Copy to Clipboard")).AsButton().Click();
+            subWindow.FindFirstDescendant(cf.ByName("Back")).AsButton().Click();
+        }
+
+        [TestMethod]
+        public void AccTest5()
+        {
+            var application = Application.Launch(@"C:\Users\jedik\source\repos\Tidogo\SafePass\SignUp\bin\Debug\MainMenu-Prototype.exe");
+            var mainWindow = application.GetMainWindow(new UIA3Automation());
+            ConditionFactory cf = new ConditionFactory(new UIA3PropertyLibrary());
+            mainWindow.FindFirstDescendant(cf.ByAutomationId("btnResetMasterPass")).AsButton().Click();
+            var subWindow = application.GetMainWindow(new UIA3Automation());
+            subWindow.FindFirstDescendant(cf.ByAutomationId("txtNewPass")).AsTextBox().Enter("S4f3p4ss");
+            subWindow.FindFirstDescendant(cf.ByAutomationId("txtConfNewPass")).AsTextBox().Enter("S4f3p4ss");
+            subWindow.FindFirstDescendant(cf.ByAutomationId("btnChangePass")).AsButton().Click();
+            /*var application = Application.Launch(@"C:\Users\jedik\source\repos\Tidogo\SafePass\SignUp\bin\Debug\Main_Project.exe");
+            var mainWindow = application.GetMainWindow(new UIA3Automation());
+            ConditionFactory cf = new ConditionFactory(new UIA3PropertyLibrary());
+            mainWindow.FindFirstDescendant(cf.ByAutomationId("txtUsername")).AsTextBox().Enter("safepass@gmail.com");
+            mainWindow.FindFirstDescendant(cf.ByAutomationId("txtPassword")).AsTextBox().Enter("1234567890");
+            mainWindow.FindFirstDescendant(cf.ByName("LOG IN")).AsButton().Click();
+            var subWindow = application.GetMainWindow(new UIA3Automation());
+            subWindow.FindFirstDescendant(cf.ByAutomationId("txtCode")).AsTextBox().Enter(subWindow.FindFirstDescendant(cf.ByAutomationId("txtDevAuth")).Name);
+            subWindow.FindFirstDescendant(cf.ByAutomationId("btnEnter")).AsButton().Click();
+            var subSubWindow = application.GetMainWindow(new UIA3Automation());
+            subSubWindow.FindFirstDescendant(cf.ByAutomationId("btnResetMasterPass")).AsButton().Click();
+            subSubWindow.FindFirstDescendant(cf.ByAutomationId("txtNewPass")).AsTextBox().Enter("S4f3p4ss");
+            subSubWindow.FindFirstDescendant(cf.ByAutomationId("txtConfNewPass")).AsTextBox().Enter("S4f3p4ss");
+            subSubWindow.FindFirstDescendant(cf.ByAutomationId("btnChangePass")).AsButton().Click();
+            subSubWindow.FindFirstDescendant(cf.ByAutomationId("btnBack")).AsButton().Click();*/
+        }
+
+        [TestMethod]
+        public void AccTest6()
+        {
+            var application = Application.Launch(@"C:\Users\jedik\source\repos\Tidogo\SafePass\SignUp\bin\Debug\Main_Project.exe");
+            var mainWindow = application.GetMainWindow(new UIA3Automation());
+            ConditionFactory cf = new ConditionFactory(new UIA3PropertyLibrary());
+            mainWindow.FindFirstDescendant(cf.ByAutomationId("txtUsername")).AsTextBox().Enter("safepass@gmail.com");
+            mainWindow.FindFirstDescendant(cf.ByAutomationId("txtPassword")).AsTextBox().Enter("1234567890");
+            mainWindow.FindFirstDescendant(cf.ByName("LOG IN")).AsButton().Click();
+            var subWindow = application.GetMainWindow(new UIA3Automation());
+            string code = subWindow.FindFirstDescendant(cf.ByAutomationId("txtDevAuth")).AsTextBox().ToString();
+        }
+
+        [TestMethod]
+        public void AccTest7()
+        {
+
+        }
+
+
     }
 }
