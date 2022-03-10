@@ -6,9 +6,9 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Text;
 
-namespace SafePass_Application
+namespace Main_Project
 {
-    static class Program
+    public class Program
     {
         /// <summary>
         /// The main entry point for the application.

@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Main_Project", "Main_Projec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainMenu-Prototype", "..\MainMenu-Prototype\MainMenu-Prototype.csproj", "{0248ACB5-3530-4AAD-B147-75A476F0AD20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlaUITests", "..\FlaUITests\FlaUITests.csproj", "{033A69E8-3100-4478-AA0F-C8B9BE0C6C16}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoTests", "..\AutoTests\AutoTests.csproj", "{1BF71C30-571C-4DB9-A0D7-02CB7B2332AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{0248ACB5-3530-4AAD-B147-75A476F0AD20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0248ACB5-3530-4AAD-B147-75A476F0AD20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0248ACB5-3530-4AAD-B147-75A476F0AD20}.Release|Any CPU.Build.0 = Release|Any CPU
-		{033A69E8-3100-4478-AA0F-C8B9BE0C6C16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{033A69E8-3100-4478-AA0F-C8B9BE0C6C16}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{033A69E8-3100-4478-AA0F-C8B9BE0C6C16}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{033A69E8-3100-4478-AA0F-C8B9BE0C6C16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BF71C30-571C-4DB9-A0D7-02CB7B2332AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BF71C30-571C-4DB9-A0D7-02CB7B2332AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BF71C30-571C-4DB9-A0D7-02CB7B2332AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BF71C30-571C-4DB9-A0D7-02CB7B2332AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

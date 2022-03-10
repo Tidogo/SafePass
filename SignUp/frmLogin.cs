@@ -11,7 +11,7 @@ using System.Data.SqlClient;
 using MainMenu_Prototype;
 using LoginRegister;
 
-namespace SafePass_Application
+namespace Main_Project
 {
     public partial class frmLogin : Form
     {

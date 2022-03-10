@@ -1,5 +1,5 @@
 ﻿
-namespace SafePass_Application
+namespace Main_Project
 {
     partial class frmRegister
     {

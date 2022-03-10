@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using MainMenu_Prototype;
 
-namespace SafePass_Application
+namespace Main_Project
 {
     public partial class frmRegister : Form
     {

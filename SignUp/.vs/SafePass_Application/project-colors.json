@@ -25,7 +25,12 @@
       "ProjectGuid": "509cf8da-0a28-41a3-865d-ece1aa8bc27b",
       "DisplayName": "SafePass.Tests",
       "ColorIndex": 3
+    },
+    "033a69e8-3100-4478-aa0f-c8b9be0c6c16": {
+      "ProjectGuid": "033a69e8-3100-4478-aa0f-c8b9be0c6c16",
+      "DisplayName": "FlaUITests",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 5
 }
