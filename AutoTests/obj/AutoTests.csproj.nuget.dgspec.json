@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\AutoTests\\AutoTests.csproj": {}
+    "C:\\Users\\slick\\source\\repos\\SafePass\\AutoTests\\AutoTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\AutoTests\\AutoTests.csproj": {
+    "C:\\Users\\slick\\source\\repos\\SafePass\\AutoTests\\AutoTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\AutoTests\\AutoTests.csproj",
+        "projectUniqueName": "C:\\Users\\slick\\source\\repos\\SafePass\\AutoTests\\AutoTests.csproj",
         "projectName": "AutoTests",
-        "projectPath": "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\AutoTests\\AutoTests.csproj",
-        "packagesPath": "C:\\Users\\jedik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\AutoTests\\obj\\",
+        "projectPath": "C:\\Users\\slick\\source\\repos\\SafePass\\AutoTests\\AutoTests.csproj",
+        "packagesPath": "C:\\Users\\slick\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\slick\\source\\repos\\SafePass\\AutoTests\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\jedik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\slick\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,11 +28,11 @@
           "net472": {
             "targetAlias": "net472",
             "projectReferences": {
-              "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\MainMenu-Prototype\\MainMenu-Prototype.csproj": {
-                "projectPath": "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\MainMenu-Prototype\\MainMenu-Prototype.csproj"
+              "C:\\Users\\slick\\source\\repos\\SafePass\\MainMenu-Prototype\\MainMenu-Prototype.csproj": {
+                "projectPath": "C:\\Users\\slick\\source\\repos\\SafePass\\MainMenu-Prototype\\MainMenu-Prototype.csproj"
               },
-              "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\SignUp\\Main_Project.csproj": {
-                "projectPath": "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\SignUp\\Main_Project.csproj"
+              "C:\\Users\\slick\\source\\repos\\SafePass\\SignUp\\Main_Project.csproj": {
+                "projectPath": "C:\\Users\\slick\\source\\repos\\SafePass\\SignUp\\Main_Project.csproj"
               }
             }
           }
@@ -75,15 +72,15 @@
               "version": "[3.1.0, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\MainMenu-Prototype\\MainMenu-Prototype.csproj": {
+    "C:\\Users\\slick\\source\\repos\\SafePass\\MainMenu-Prototype\\MainMenu-Prototype.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\MainMenu-Prototype\\MainMenu-Prototype.csproj",
+        "projectUniqueName": "C:\\Users\\slick\\source\\repos\\SafePass\\MainMenu-Prototype\\MainMenu-Prototype.csproj",
         "projectName": "MainMenu-Prototype",
-        "projectPath": "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\MainMenu-Prototype\\MainMenu-Prototype.csproj",
+        "projectPath": "C:\\Users\\slick\\source\\repos\\SafePass\\MainMenu-Prototype\\MainMenu-Prototype.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {}
@@ -94,16 +91,16 @@
         "net472": {}
       }
     },
-    "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\SignUp\\Main_Project.csproj": {
+    "C:\\Users\\slick\\source\\repos\\SafePass\\SignUp\\Main_Project.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\SignUp\\Main_Project.csproj",
+        "projectUniqueName": "C:\\Users\\slick\\source\\repos\\SafePass\\SignUp\\Main_Project.csproj",
         "projectName": "Main_Project",
-        "projectPath": "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\SignUp\\Main_Project.csproj",
+        "projectPath": "C:\\Users\\slick\\source\\repos\\SafePass\\SignUp\\Main_Project.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\MainMenu-Prototype\\MainMenu-Prototype.csproj": {
-                "projectPath": "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\MainMenu-Prototype\\MainMenu-Prototype.csproj"
+              "C:\\Users\\slick\\source\\repos\\SafePass\\MainMenu-Prototype\\MainMenu-Prototype.csproj": {
+                "projectPath": "C:\\Users\\slick\\source\\repos\\SafePass\\MainMenu-Prototype\\MainMenu-Prototype.csproj"
               }
             }
           }

@@ -94,6 +94,7 @@ namespace AutoTests
             subSubWindow.FindFirstDescendant(cf.ByAutomationId("btnBack")).AsButton().Click();*/
         }
 
+        // test for 2FA Auth !!!! REQUIRES ATTENTION !!!!!!
         [TestMethod]
         public void AccTest6()
         {
@@ -105,14 +106,87 @@ namespace AutoTests
             mainWindow.FindFirstDescendant(cf.ByName("LOG IN")).AsButton().Click();
             var subWindow = application.GetMainWindow(new UIA3Automation());
             string code = subWindow.FindFirstDescendant(cf.ByAutomationId("txtDevAuth")).AsTextBox().ToString();
+            subWindow.FindFirstDescendant(cf.ByAutomationId("txtCode")).AsTextBox().Enter(code); // Entering the 2FA code in the text box
+            subWindow.FindFirstDescendant(cf.ByAutomationId("btnEnter")).AsButton().Click(); // Pressing the Enter button
         }
 
+        // testing HELP window
         [TestMethod]
         public void AccTest7()
         {
-
+            var application = Application.Launch(@"C:\Users\jedik\source\repos\Tidogo\SafePass\SignUp\bin\Debug\MainMenu-Prototype.exe");
+            var mainWindow = application.GetMainWindow(new UIA3Automation());
+            ConditionFactory cf = new ConditionFactory(new UIA3PropertyLibrary());
+            mainWindow.FindFirstDescendant(cf.ByName("btnHelp")).AsButton().Click();
+            var subWindow = application.GetMainWindow(new UIA3Automation());
+            subWindow.FindFirstDescendant(cf.ByAutomationId("btn_OpenEmail")).AsButton().Click();
         }
 
+        // testing for ADD entries
+        [TestMethod]
+        public void AccTest8()
+        {
+            var application = Application.Launch(@"C:\Users\jedik\source\repos\Tidogo\SafePass\SignUp\bin\Debug\MainMenu-Prototype.exe");
+            var mainWindow = application.GetMainWindow(new UIA3Automation());
+            ConditionFactory cf = new ConditionFactory(new UIA3PropertyLibrary());
+            mainWindow.FindFirstDescendant(cf.ByName("addEntryButton")).AsButton().Click();
+            var subWindow = application.GetMainWindow(new UIA3Automation());
+            subWindow.FindFirstDescendant(cf.ByAutomationId("txtUserEmail")).AsTextBox().Enter("sample@gmail.com");
+            subWindow.FindFirstDescendant(cf.ByAutomationId("txtUserPW")).AsTextBox().Enter("samplePass123");
+            subWindow.FindFirstDescendant(cf.ByAutomationId("txtCategory")).AsTextBox().Enter("Utilities");
+            subWindow.FindFirstDescendant(cf.ByAutomationId("txtNotes")).AsTextBox().Enter("My password from work email");
+            subWindow.FindFirstDescendant(cf.ByAutomationId("txtServiceName")).AsTextBox().Enter("Gmail");
+            subWindow.FindFirstDescendant(cf.ByAutomationId("txtServiceURL")).AsTextBox().Enter("www.gmail.com");
+            subWindow.FindFirstDescendant(cf.ByAutomationId("addUser")).AsButton().Click();
+        }
 
+        // testing for the UPDATE function !!!!!!!!!!!!!!!!! REQUIRES ATTENTION !!!!!!!!!!!!!!!!!!!!!!
+        [TestMethod]
+        public void AccTest9()
+        {
+            var application = Application.Launch(@"C:\Users\jedik\source\repos\Tidogo\SafePass\SignUp\bin\Debug\MainMenu-Prototype.exe");
+            var mainWindow = application.GetMainWindow(new UIA3Automation());
+            ConditionFactory cf = new ConditionFactory(new UIA3PropertyLibrary());
+            mainWindow.FindFirstDescendant(cf.ByAutomationId("addEntryButton")).AsButton().Click();
+            var subWindow = application.GetMainWindow(new UIA3Automation());
+            subWindow.FindFirstDescendant(cf.ByAutomationId("button1")).AsButton().Click();
+            var subWindowChild = application.GetMainWindow(new UIA3Automation());
+            subWindowChild.FindFirstDescendant(cf.ByAutomationId("userid")).AsTextBox().Enter("1"); // I'm not sure what varible to use for that !!!!!
+            subWindowChild.FindFirstDescendant(cf.ByAutomationId("txtNotes")).AsTextBox().Enter("This is not a work account anymore");
+            subWindowChild.FindFirstDescendant(cf.ByAutomationId("button1")).AsButton().Click();
+        }
+        // testing for the DELETE function !!!!!!!!!!!!!!!!! REQUIRES ATTENTION !!!!!!!!!!!!!!!!!!!!!!
+        public void AccTest10()
+        {
+            var application = Application.Launch(@"C:\Users\jedik\source\repos\Tidogo\SafePass\SignUp\bin\Debug\MainMenu-Prototype.exe");
+            var mainWindow = application.GetMainWindow(new UIA3Automation());
+            ConditionFactory cf = new ConditionFactory(new UIA3PropertyLibrary());
+            mainWindow.FindFirstDescendant(cf.ByAutomationId("addEntryButton")).AsButton().Click();
+            var subWindow = application.GetMainWindow(new UIA3Automation());
+            subWindow.FindFirstDescendant(cf.ByAutomationId("button2")).AsButton().Click();
+            var subWindowChild = application.GetMainWindow(new UIA3Automation());
+            subWindowChild.FindFirstDescendant(cf.ByAutomationId("txtUserEmail")).AsTextBox().Enter("sample@gmail.com"); // I'm not sure what varible to use for that too !!!!!
+            subWindowChild.FindFirstDescendant(cf.ByAutomationId("button2")).AsButton().Click();
+        }
+
+        // testing for viewing the ADDED ENTRY IN MAIN MENU
+        [TestMethod]
+        public void AccTest11()
+        {
+            var application = Application.Launch(@"C:\Users\jedik\source\repos\Tidogo\SafePass\SignUp\bin\Debug\MainMenu-Prototype.exe");
+            var mainWindow = application.GetMainWindow(new UIA3Automation());
+            ConditionFactory cf = new ConditionFactory(new UIA3PropertyLibrary());
+            mainWindow.FindFirstDescendant(cf.ByName("addEntryButton")).AsButton().Click();
+            var subWindow = application.GetMainWindow(new UIA3Automation());
+            subWindow.FindFirstDescendant(cf.ByAutomationId("txtUserEmail")).AsTextBox().Enter("sample@gmail.com");
+            subWindow.FindFirstDescendant(cf.ByAutomationId("txtUserPW")).AsTextBox().Enter("samplePass123");
+            subWindow.FindFirstDescendant(cf.ByAutomationId("txtCategory")).AsTextBox().Enter("Utilities");
+            subWindow.FindFirstDescendant(cf.ByAutomationId("txtNotes")).AsTextBox().Enter("My password from work email");
+            subWindow.FindFirstDescendant(cf.ByAutomationId("txtServiceName")).AsTextBox().Enter("Gmail");
+            subWindow.FindFirstDescendant(cf.ByAutomationId("txtServiceURL")).AsTextBox().Enter("www.gmail.com");
+            subWindow.FindFirstDescendant(cf.ByAutomationId("addUser")).AsButton().Click();
+            subWindow.FindFirstDescendant(cf.ByAutomationId("btnBack")).AsButton().Click();
+            var subWindowChild = application.GetMainWindow(new UIA3Automation());
+        }
     }
 }
