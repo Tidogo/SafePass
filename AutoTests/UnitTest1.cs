@@ -110,7 +110,12 @@ namespace AutoTests
         [TestMethod]
         public void AccTest7()
         {
-
+            var application = Application.Launch(@"C:\Users\jedik\source\repos\Tidogo\SafePass\SignUp\bin\Debug\MainMenu-Prototype.exe");
+            var mainWindow = application.GetMainWindow(new UIA3Automation());
+            ConditionFactory cf = new ConditionFactory(new UIA3PropertyLibrary());
+            mainWindow.FindFirstDescendant(cf.ByAutomationId("btnHelp")).AsButton().Click();
+            var subWindow = application.GetMainWindow(new UIA3Automation());
+            subWindow.FindFirstDescendant(cf.ByAutomationId("btn_OpenEmail")).AsButton().Click();
         }
 
 
