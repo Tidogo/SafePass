@@ -717,19 +717,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\slick\\.nuget\\packages\\": {}
+    "C:\\Users\\jedik\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\slick\\source\\repos\\SafePass\\AutoTests\\AutoTests.csproj",
+      "projectUniqueName": "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\AutoTests\\AutoTests.csproj",
       "projectName": "AutoTests",
-      "projectPath": "C:\\Users\\slick\\source\\repos\\SafePass\\AutoTests\\AutoTests.csproj",
-      "packagesPath": "C:\\Users\\slick\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\slick\\source\\repos\\SafePass\\AutoTests\\obj\\",
+      "projectPath": "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\AutoTests\\AutoTests.csproj",
+      "packagesPath": "C:\\Users\\jedik\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\AutoTests\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\slick\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jedik\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -743,11 +747,11 @@
         "net472": {
           "targetAlias": "net472",
           "projectReferences": {
-            "C:\\Users\\slick\\source\\repos\\SafePass\\MainMenu-Prototype\\MainMenu-Prototype.csproj": {
-              "projectPath": "C:\\Users\\slick\\source\\repos\\SafePass\\MainMenu-Prototype\\MainMenu-Prototype.csproj"
+            "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\MainMenu-Prototype\\MainMenu-Prototype.csproj": {
+              "projectPath": "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\MainMenu-Prototype\\MainMenu-Prototype.csproj"
             },
-            "C:\\Users\\slick\\source\\repos\\SafePass\\SignUp\\Main_Project.csproj": {
-              "projectPath": "C:\\Users\\slick\\source\\repos\\SafePass\\SignUp\\Main_Project.csproj"
+            "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\SignUp\\Main_Project.csproj": {
+              "projectPath": "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\SignUp\\Main_Project.csproj"
             }
           }
         }
@@ -787,7 +791,7 @@
             "version": "[3.1.0, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

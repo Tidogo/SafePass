@@ -77,21 +77,6 @@ namespace AutoTests
             subWindow.FindFirstDescendant(cf.ByAutomationId("txtNewPass")).AsTextBox().Enter("S4f3p4ss");
             subWindow.FindFirstDescendant(cf.ByAutomationId("txtConfNewPass")).AsTextBox().Enter("S4f3p4ss");
             subWindow.FindFirstDescendant(cf.ByAutomationId("btnChangePass")).AsButton().Click();
-            /*var application = Application.Launch(@"C:\Users\jedik\source\repos\Tidogo\SafePass\SignUp\bin\Debug\Main_Project.exe");
-            var mainWindow = application.GetMainWindow(new UIA3Automation());
-            ConditionFactory cf = new ConditionFactory(new UIA3PropertyLibrary());
-            mainWindow.FindFirstDescendant(cf.ByAutomationId("txtUsername")).AsTextBox().Enter("safepass@gmail.com");
-            mainWindow.FindFirstDescendant(cf.ByAutomationId("txtPassword")).AsTextBox().Enter("1234567890");
-            mainWindow.FindFirstDescendant(cf.ByName("LOG IN")).AsButton().Click();
-            var subWindow = application.GetMainWindow(new UIA3Automation());
-            subWindow.FindFirstDescendant(cf.ByAutomationId("txtCode")).AsTextBox().Enter(subWindow.FindFirstDescendant(cf.ByAutomationId("txtDevAuth")).Name);
-            subWindow.FindFirstDescendant(cf.ByAutomationId("btnEnter")).AsButton().Click();
-            var subSubWindow = application.GetMainWindow(new UIA3Automation());
-            subSubWindow.FindFirstDescendant(cf.ByAutomationId("btnResetMasterPass")).AsButton().Click();
-            subSubWindow.FindFirstDescendant(cf.ByAutomationId("txtNewPass")).AsTextBox().Enter("S4f3p4ss");
-            subSubWindow.FindFirstDescendant(cf.ByAutomationId("txtConfNewPass")).AsTextBox().Enter("S4f3p4ss");
-            subSubWindow.FindFirstDescendant(cf.ByAutomationId("btnChangePass")).AsButton().Click();
-            subSubWindow.FindFirstDescendant(cf.ByAutomationId("btnBack")).AsButton().Click();*/
         }
 
         // test for 2FA Auth !!!! REQUIRES ATTENTION !!!!!!
@@ -103,7 +88,7 @@ namespace AutoTests
             ConditionFactory cf = new ConditionFactory(new UIA3PropertyLibrary());
             mainWindow.FindFirstDescendant(cf.ByAutomationId("txtUsername")).AsTextBox().Enter("safepass@gmail.com");
             mainWindow.FindFirstDescendant(cf.ByAutomationId("txtPassword")).AsTextBox().Enter("1234567890");
-            mainWindow.FindFirstDescendant(cf.ByName("LOG IN")).AsButton().Click();
+            mainWindow.FindFirstDescendant(cf.ByAutomationId("btnLogin")).AsButton().Click();
             var subWindow = application.GetMainWindow(new UIA3Automation());
             string code = subWindow.FindFirstDescendant(cf.ByAutomationId("txtDevAuth")).AsTextBox().ToString();
             subWindow.FindFirstDescendant(cf.ByAutomationId("txtCode")).AsTextBox().Enter(code); // Entering the 2FA code in the text box
@@ -117,7 +102,7 @@ namespace AutoTests
             var application = Application.Launch(@"C:\Users\jedik\source\repos\Tidogo\SafePass\SignUp\bin\Debug\MainMenu-Prototype.exe");
             var mainWindow = application.GetMainWindow(new UIA3Automation());
             ConditionFactory cf = new ConditionFactory(new UIA3PropertyLibrary());
-            mainWindow.FindFirstDescendant(cf.ByName("btnHelp")).AsButton().Click();
+            mainWindow.FindFirstDescendant(cf.ByAutomationId("btnHelp")).AsButton().Click();
             var subWindow = application.GetMainWindow(new UIA3Automation());
             subWindow.FindFirstDescendant(cf.ByAutomationId("btn_OpenEmail")).AsButton().Click();
         }
@@ -129,7 +114,7 @@ namespace AutoTests
             var application = Application.Launch(@"C:\Users\jedik\source\repos\Tidogo\SafePass\SignUp\bin\Debug\MainMenu-Prototype.exe");
             var mainWindow = application.GetMainWindow(new UIA3Automation());
             ConditionFactory cf = new ConditionFactory(new UIA3PropertyLibrary());
-            mainWindow.FindFirstDescendant(cf.ByName("addEntryButton")).AsButton().Click();
+            mainWindow.FindFirstDescendant(cf.ByAutomationId("addEntryButton")).AsButton().Click();
             var subWindow = application.GetMainWindow(new UIA3Automation());
             subWindow.FindFirstDescendant(cf.ByAutomationId("txtUserEmail")).AsTextBox().Enter("sample@gmail.com");
             subWindow.FindFirstDescendant(cf.ByAutomationId("txtUserPW")).AsTextBox().Enter("samplePass123");
@@ -176,7 +161,7 @@ namespace AutoTests
             var application = Application.Launch(@"C:\Users\jedik\source\repos\Tidogo\SafePass\SignUp\bin\Debug\MainMenu-Prototype.exe");
             var mainWindow = application.GetMainWindow(new UIA3Automation());
             ConditionFactory cf = new ConditionFactory(new UIA3PropertyLibrary());
-            mainWindow.FindFirstDescendant(cf.ByName("addEntryButton")).AsButton().Click();
+            mainWindow.FindFirstDescendant(cf.ByAutomationId("addEntryButton")).AsButton().Click();
             var subWindow = application.GetMainWindow(new UIA3Automation());
             subWindow.FindFirstDescendant(cf.ByAutomationId("txtUserEmail")).AsTextBox().Enter("sample@gmail.com");
             subWindow.FindFirstDescendant(cf.ByAutomationId("txtUserPW")).AsTextBox().Enter("samplePass123");

@@ -1,18 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "+fcaZZW2Ij6OZZqJiJLe1EM3tvqruJyV0Bog9SdPxC7iiavcK/+kLFTBKrgqyvL99N+8NxI6pa8XKksaHa3/sw==",
+  "dgSpecHash": "o0GUFnBIhi6rmBw0XGDqTZAT5De6VcyAcXO/8UKI5BsmXmPO/MzOIW/XT1V9MpPueIT8K1OwXBSBy4uwd6+Hbg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\slick\\source\\repos\\SafePass\\AutoTests\\AutoTests.csproj",
+  "projectFilePath": "C:\\Users\\jedik\\Source\\Repos\\Tidogo\\SafePass\\AutoTests\\AutoTests.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\slick\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
-    "C:\\Users\\slick\\.nuget\\packages\\flaui.core\\3.2.0\\flaui.core.3.2.0.nupkg.sha512",
-    "C:\\Users\\slick\\.nuget\\packages\\flaui.uia3\\3.2.0\\flaui.uia3.3.2.0.nupkg.sha512",
-    "C:\\Users\\slick\\.nuget\\packages\\interop.uiautomationclient\\10.18362.0\\interop.uiautomationclient.10.18362.0.nupkg.sha512",
-    "C:\\Users\\slick\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",
-    "C:\\Users\\slick\\.nuget\\packages\\microsoft.net.test.sdk\\16.11.0\\microsoft.net.test.sdk.16.11.0.nupkg.sha512",
-    "C:\\Users\\slick\\.nuget\\packages\\mstest.testadapter\\2.2.7\\mstest.testadapter.2.2.7.nupkg.sha512",
-    "C:\\Users\\slick\\.nuget\\packages\\mstest.testframework\\2.2.7\\mstest.testframework.2.2.7.nupkg.sha512",
-    "C:\\Users\\slick\\.nuget\\packages\\system.management\\4.7.0\\system.management.4.7.0.nupkg.sha512"
+    "C:\\Users\\jedik\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
+    "C:\\Users\\jedik\\.nuget\\packages\\flaui.core\\3.2.0\\flaui.core.3.2.0.nupkg.sha512",
+    "C:\\Users\\jedik\\.nuget\\packages\\flaui.uia3\\3.2.0\\flaui.uia3.3.2.0.nupkg.sha512",
+    "C:\\Users\\jedik\\.nuget\\packages\\interop.uiautomationclient\\10.18362.0\\interop.uiautomationclient.10.18362.0.nupkg.sha512",
+    "C:\\Users\\jedik\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",
+    "C:\\Users\\jedik\\.nuget\\packages\\microsoft.net.test.sdk\\16.11.0\\microsoft.net.test.sdk.16.11.0.nupkg.sha512",
+    "C:\\Users\\jedik\\.nuget\\packages\\mstest.testadapter\\2.2.7\\mstest.testadapter.2.2.7.nupkg.sha512",
+    "C:\\Users\\jedik\\.nuget\\packages\\mstest.testframework\\2.2.7\\mstest.testframework.2.2.7.nupkg.sha512",
+    "C:\\Users\\jedik\\.nuget\\packages\\system.management\\4.7.0\\system.management.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

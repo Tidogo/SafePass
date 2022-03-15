@@ -86,9 +86,9 @@ namespace Main_Project
                         //MessageBox.Show(id.ToString());
                         // Opening a new main menu window
                         this.Hide();
+                        connection.Close();
                         // pass account id found in db to main menu
                     }
-                    connection.Close();
                 }
             }
             catch (SqlException ec)
